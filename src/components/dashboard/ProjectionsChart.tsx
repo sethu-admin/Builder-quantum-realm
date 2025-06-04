@@ -21,7 +21,7 @@ const data = [
 
 export const ProjectionsChart: React.FC = () => {
   return (
-    <Card className="mt-6">
+    <Card className="mt-6 rounded-3xl">
       <CardHeader className="flex flex-row items-center justify-between">
         <CardTitle className="text-lg font-medium text-gray-700">
           PROJECTIONS VS ACTUALS

@@ -25,7 +25,7 @@ export const MetricCard: React.FC<MetricCardProps> = ({
     <Card className="relative overflow-hidden bg-white">
       <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
         <h3 className="text-sm font-medium text-gray-600">{title}</h3>
-        <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-blue-100">
+        <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-blue-100">
           {icon}
         </div>
       </CardHeader>

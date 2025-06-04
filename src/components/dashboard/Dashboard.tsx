@@ -73,21 +73,21 @@ export const Dashboard: React.FC = () => {
               <Button
                 variant="outline"
                 size="sm"
-                className="bg-blue-500 text-white hover:bg-blue-600"
+                className="bg-blue-500 text-white hover:bg-blue-600 rounded-2xl"
               >
                 <Calendar className="h-4 w-4 mr-1" />
               </Button>
               <Button
                 variant="outline"
                 size="sm"
-                className="bg-blue-500 text-white hover:bg-blue-600"
+                className="bg-blue-500 text-white hover:bg-blue-600 rounded-2xl"
               >
                 <Download className="h-4 w-4" />
               </Button>
               <Button
                 variant="outline"
                 size="sm"
-                className="bg-blue-500 text-white hover:bg-blue-600"
+                className="bg-blue-500 text-white hover:bg-blue-600 rounded-2xl"
               >
                 <Filter className="h-4 w-4" />
               </Button>
