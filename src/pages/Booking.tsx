@@ -105,7 +105,7 @@ const Booking = () => {
       </header>
 
       {/* Hero Section - Atmospheric Night City */}
-      <div className="relative h-96 bg-gradient-to-b from-slate-800 via-blue-800 to-blue-900 overflow-hidden">
+      <div className="relative h-96 bg-gradient-to-b from-slate-900 via-blue-900 to-slate-800 overflow-hidden">
         {/* Starry Night Sky */}
         <div className="absolute inset-0">
           {/* Scattered Stars */}
