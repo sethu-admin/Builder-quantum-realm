@@ -104,106 +104,107 @@ const Booking = () => {
         </div>
       </header>
 
-      {/* Hero Section with Minimalist Night City */}
-      <div className="relative h-96 bg-gradient-to-b from-slate-900 via-blue-900 to-slate-700 overflow-hidden">
+      {/* Hero Section - Atmospheric Night City */}
+      <div className="relative h-96 bg-gradient-to-b from-slate-800 via-blue-800 to-blue-900 overflow-hidden">
         {/* Starry Night Sky */}
         <div className="absolute inset-0">
-          {/* Dense Star Field */}
-          <div className="absolute top-4 left-8 w-0.5 h-0.5 bg-white rounded-full opacity-80"></div>
-          <div className="absolute top-6 left-16 w-1 h-1 bg-white rounded-full opacity-90"></div>
-          <div className="absolute top-8 left-28 w-0.5 h-0.5 bg-white rounded-full opacity-70"></div>
-          <div className="absolute top-10 left-40 w-0.5 h-0.5 bg-white rounded-full opacity-85"></div>
-          <div className="absolute top-12 left-52 w-1 h-1 bg-white rounded-full opacity-75"></div>
-          <div className="absolute top-14 left-64 w-0.5 h-0.5 bg-white rounded-full opacity-90"></div>
-          <div className="absolute top-16 left-76 w-0.5 h-0.5 bg-white rounded-full opacity-65"></div>
-          <div className="absolute top-18 left-88 w-1 h-1 bg-white rounded-full opacity-85"></div>
-          <div className="absolute top-20 left-100 w-0.5 h-0.5 bg-white rounded-full opacity-70"></div>
+          {/* Scattered Stars */}
+          <div className="absolute top-6 left-12 w-0.5 h-0.5 bg-white rounded-full opacity-90"></div>
+          <div className="absolute top-8 left-24 w-0.5 h-0.5 bg-white rounded-full opacity-70"></div>
+          <div className="absolute top-10 left-36 w-1 h-1 bg-white rounded-full opacity-85"></div>
+          <div className="absolute top-12 left-48 w-0.5 h-0.5 bg-white rounded-full opacity-75"></div>
+          <div className="absolute top-14 left-60 w-0.5 h-0.5 bg-white rounded-full opacity-80"></div>
+          <div className="absolute top-16 left-72 w-1 h-1 bg-white rounded-full opacity-90"></div>
+          <div className="absolute top-18 left-84 w-0.5 h-0.5 bg-white rounded-full opacity-65"></div>
+          <div className="absolute top-20 left-96 w-0.5 h-0.5 bg-white rounded-full opacity-85"></div>
 
-          <div className="absolute top-5 right-8 w-0.5 h-0.5 bg-white rounded-full opacity-75"></div>
-          <div className="absolute top-7 right-20 w-1 h-1 bg-white rounded-full opacity-85"></div>
-          <div className="absolute top-9 right-32 w-0.5 h-0.5 bg-white rounded-full opacity-80"></div>
-          <div className="absolute top-11 right-44 w-0.5 h-0.5 bg-white rounded-full opacity-70"></div>
-          <div className="absolute top-13 right-56 w-1 h-1 bg-white rounded-full opacity-90"></div>
-          <div className="absolute top-15 right-68 w-0.5 h-0.5 bg-white rounded-full opacity-65"></div>
-          <div className="absolute top-17 right-80 w-0.5 h-0.5 bg-white rounded-full opacity-85"></div>
-          <div className="absolute top-19 right-92 w-1 h-1 bg-white rounded-full opacity-75"></div>
+          <div className="absolute top-7 right-16 w-0.5 h-0.5 bg-white rounded-full opacity-80"></div>
+          <div className="absolute top-9 right-28 w-1 h-1 bg-white rounded-full opacity-75"></div>
+          <div className="absolute top-11 right-40 w-0.5 h-0.5 bg-white rounded-full opacity-90"></div>
+          <div className="absolute top-13 right-52 w-0.5 h-0.5 bg-white rounded-full opacity-70"></div>
+          <div className="absolute top-15 right-64 w-1 h-1 bg-white rounded-full opacity-85"></div>
+          <div className="absolute top-17 right-76 w-0.5 h-0.5 bg-white rounded-full opacity-80"></div>
+          <div className="absolute top-19 right-88 w-0.5 h-0.5 bg-white rounded-full opacity-75"></div>
 
-          <div className="absolute top-22 left-12 w-0.5 h-0.5 bg-white rounded-full opacity-70"></div>
-          <div className="absolute top-24 left-32 w-1 h-1 bg-white rounded-full opacity-80"></div>
-          <div className="absolute top-26 left-48 w-0.5 h-0.5 bg-white rounded-full opacity-85"></div>
-          <div className="absolute top-28 right-16 w-0.5 h-0.5 bg-white rounded-full opacity-75"></div>
-          <div className="absolute top-30 right-36 w-1 h-1 bg-white rounded-full opacity-90"></div>
-          <div className="absolute top-32 right-52 w-0.5 h-0.5 bg-white rounded-full opacity-65"></div>
-
-          <div className="absolute top-34 left-20 w-0.5 h-0.5 bg-white rounded-full opacity-80"></div>
-          <div className="absolute top-36 left-44 w-1 h-1 bg-white rounded-full opacity-70"></div>
-          <div className="absolute top-38 right-28 w-0.5 h-0.5 bg-white rounded-full opacity-85"></div>
-          <div className="absolute top-40 right-48 w-0.5 h-0.5 bg-white rounded-full opacity-75"></div>
+          <div className="absolute top-22 left-20 w-0.5 h-0.5 bg-white rounded-full opacity-70"></div>
+          <div className="absolute top-24 left-44 w-1 h-1 bg-white rounded-full opacity-85"></div>
+          <div className="absolute top-26 left-68 w-0.5 h-0.5 bg-white rounded-full opacity-80"></div>
+          <div className="absolute top-28 right-24 w-0.5 h-0.5 bg-white rounded-full opacity-90"></div>
+          <div className="absolute top-30 right-48 w-1 h-1 bg-white rounded-full opacity-75"></div>
+          <div className="absolute top-32 right-72 w-0.5 h-0.5 bg-white rounded-full opacity-85"></div>
         </div>
 
-        {/* Crescent Moon */}
-        <div className="absolute top-16 left-32">
-          <svg className="w-20 h-20" viewBox="0 0 80 80">
-            <circle cx="40" cy="40" r="18" fill="#F8FAFC" opacity="0.95" />
-            <circle cx="45" cy="40" r="15" fill="#1E293B" opacity="1" />
+        {/* Prominent Crescent Moon */}
+        <div className="absolute top-12 left-28">
+          <svg className="w-24 h-24" viewBox="0 0 96 96">
+            <path
+              d="M 30 12 A 24 24 0 0 0 30 84 A 20 20 0 0 1 30 12 Z"
+              fill="#F1F5F9"
+              opacity="0.95"
+            />
+            {/* Moon surface details */}
+            <circle cx="35" cy="25" r="2" fill="#E2E8F0" opacity="0.6" />
+            <circle cx="40" cy="35" r="1.5" fill="#E2E8F0" opacity="0.4" />
+            <circle cx="32" cy="45" r="1" fill="#E2E8F0" opacity="0.5" />
+            <circle cx="38" cy="55" r="2.5" fill="#E2E8F0" opacity="0.3" />
+            <circle cx="34" cy="68" r="1.5" fill="#E2E8F0" opacity="0.4" />
           </svg>
         </div>
 
-        {/* Clean City Silhouette */}
+        {/* Professional City Skyline */}
         <div className="absolute bottom-0 left-0 right-0">
           <svg
-            className="w-full h-40"
-            viewBox="0 0 1200 160"
+            className="w-full h-48"
+            viewBox="0 0 1200 180"
             preserveAspectRatio="none"
           >
-            {/* Building Silhouettes - Pure Black */}
-            <rect x="0" y="120" width="60" height="40" fill="#0F172A" />
-            <rect x="70" y="110" width="45" height="50" fill="#0F172A" />
-            <rect x="125" y="90" width="55" height="70" fill="#0F172A" />
-            <rect x="190" y="70" width="40" height="90" fill="#0F172A" />
-            <rect x="240" y="50" width="65" height="110" fill="#0F172A" />
-            <rect x="315" y="30" width="50" height="130" fill="#0F172A" />
-            <rect x="375" y="20" width="70" height="140" fill="#0F172A" />
-            <rect x="455" y="10" width="60" height="150" fill="#0F172A" />
-            <rect x="525" y="25" width="80" height="135" fill="#0F172A" />
-            <rect x="615" y="40" width="55" height="120" fill="#0F172A" />
-            <rect x="680" y="60" width="70" height="100" fill="#0F172A" />
-            <rect x="760" y="80" width="45" height="80" fill="#0F172A" />
-            <rect x="815" y="100" width="60" height="60" fill="#0F172A" />
-            <rect x="885" y="90" width="50" height="70" fill="#0F172A" />
-            <rect x="945" y="105" width="65" height="55" fill="#0F172A" />
-            <rect x="1020" y="115" width="55" height="45" fill="#0F172A" />
-            <rect x="1085" y="125" width="45" height="35" fill="#0F172A" />
-            <rect x="1140" y="135" width="60" height="25" fill="#0F172A" />
+            {/* Modern City Silhouettes */}
+            <rect x="0" y="140" width="70" height="40" fill="#0F172A" />
+            <rect x="80" y="130" width="50" height="50" fill="#0F172A" />
+            <rect x="140" y="110" width="60" height="70" fill="#0F172A" />
+            <rect x="210" y="90" width="45" height="90" fill="#0F172A" />
+            <rect x="265" y="70" width="75" height="110" fill="#0F172A" />
+            <rect x="350" y="40" width="55" height="140" fill="#0F172A" />
+            <rect x="415" y="20" width="80" height="160" fill="#0F172A" />
+            <rect x="505" y="5" width="65" height="175" fill="#0F172A" />
+            <rect x="580" y="15" width="90" height="165" fill="#0F172A" />
+            <rect x="680" y="35" width="60" height="145" fill="#0F172A" />
+            <rect x="750" y="55" width="75" height="125" fill="#0F172A" />
+            <rect x="835" y="75" width="50" height="105" fill="#0F172A" />
+            <rect x="895" y="95" width="65" height="85" fill="#0F172A" />
+            <rect x="970" y="105" width="55" height="75" fill="#0F172A" />
+            <rect x="1035" y="120" width="70" height="60" fill="#0F172A" />
+            <rect x="1115" y="135" width="50" height="45" fill="#0F172A" />
+            <rect x="1175" y="145" width="25" height="35" fill="#0F172A" />
 
-            {/* Ground Level Street Lights */}
-            <circle cx="50" cy="155" r="2" fill="#FCD34D" opacity="0.9" />
-            <circle cx="120" cy="155" r="2" fill="#FCD34D" opacity="0.7" />
-            <circle cx="200" cy="155" r="2" fill="#FCD34D" opacity="0.9" />
-            <circle cx="280" cy="155" r="2" fill="#FCD34D" opacity="0.8" />
-            <circle cx="360" cy="155" r="2" fill="#FCD34D" opacity="0.7" />
-            <circle cx="440" cy="155" r="2" fill="#FCD34D" opacity="0.9" />
-            <circle cx="520" cy="155" r="2" fill="#FCD34D" opacity="0.8" />
-            <circle cx="600" cy="155" r="2" fill="#FCD34D" opacity="0.7" />
-            <circle cx="680" cy="155" r="2" fill="#FCD34D" opacity="0.9" />
-            <circle cx="760" cy="155" r="2" fill="#FCD34D" opacity="0.8" />
-            <circle cx="840" cy="155" r="2" fill="#FCD34D" opacity="0.7" />
-            <circle cx="920" cy="155" r="2" fill="#FCD34D" opacity="0.9" />
-            <circle cx="1000" cy="155" r="2" fill="#FCD34D" opacity="0.8" />
-            <circle cx="1080" cy="155" r="2" fill="#FCD34D" opacity="0.7" />
-            <circle cx="1160" cy="155" r="2" fill="#FCD34D" opacity="0.9" />
+            {/* Minimal Street Lighting */}
+            <circle cx="40" cy="175" r="1.5" fill="#FCD34D" opacity="0.8" />
+            <circle cx="120" cy="175" r="1.5" fill="#FCD34D" opacity="0.6" />
+            <circle cx="200" cy="175" r="1.5" fill="#FCD34D" opacity="0.8" />
+            <circle cx="280" cy="175" r="1.5" fill="#FCD34D" opacity="0.7" />
+            <circle cx="360" cy="175" r="1.5" fill="#FCD34D" opacity="0.9" />
+            <circle cx="440" cy="175" r="1.5" fill="#FCD34D" opacity="0.6" />
+            <circle cx="520" cy="175" r="1.5" fill="#FCD34D" opacity="0.8" />
+            <circle cx="600" cy="175" r="1.5" fill="#FCD34D" opacity="0.7" />
+            <circle cx="680" cy="175" r="1.5" fill="#FCD34D" opacity="0.9" />
+            <circle cx="760" cy="175" r="1.5" fill="#FCD34D" opacity="0.6" />
+            <circle cx="840" cy="175" r="1.5" fill="#FCD34D" opacity="0.8" />
+            <circle cx="920" cy="175" r="1.5" fill="#FCD34D" opacity="0.7" />
+            <circle cx="1000" cy="175" r="1.5" fill="#FCD34D" opacity="0.9" />
+            <circle cx="1080" cy="175" r="1.5" fill="#FCD34D" opacity="0.6" />
+            <circle cx="1160" cy="175" r="1.5" fill="#FCD34D" opacity="0.8" />
           </svg>
         </div>
 
-        {/* Waterline Reflection */}
-        <div className="absolute bottom-0 left-0 right-0 h-4 bg-slate-800"></div>
+        {/* Water Reflection */}
+        <div className="absolute bottom-0 left-0 right-0 h-6 bg-gradient-to-b from-slate-800 to-slate-900"></div>
 
         {/* Hero Text */}
         <div className="absolute top-16 left-8 text-white max-w-lg">
-          <h1 className="text-4xl md:text-5xl font-bold mb-2 leading-tight drop-shadow-xl">
+          <h1 className="text-4xl md:text-5xl font-bold mb-2 leading-tight drop-shadow-2xl">
             India's No.1 online
           </h1>
-          <h2 className="text-4xl md:text-5xl font-bold leading-tight drop-shadow-xl">
+          <h2 className="text-4xl md:text-5xl font-bold leading-tight drop-shadow-2xl">
             bus ticket booking site
           </h2>
         </div>
