@@ -281,12 +281,13 @@ const Index = () => {
 
         {/* Integrated Booking Form */}
         <div className="relative z-10 -mt-20">
-          <div className="max-w-6xl mx-auto px-8">
+          <div className="max-w-5xl mx-auto px-8">
             <Card className="bg-white shadow-2xl rounded-3xl overflow-hidden">
-              <CardContent className="p-6">
-                <div className="grid grid-cols-1 lg:grid-cols-7 gap-4 items-end">
+              <CardContent className="p-8">
+                {/* Input Fields Row */}
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
                   {/* From */}
-                  <div className="lg:col-span-2 space-y-2">
+                  <div className="space-y-2">
                     <Label className="text-sm font-medium text-gray-600">
                       From
                     </Label>
@@ -302,7 +303,7 @@ const Index = () => {
                   </div>
 
                   {/* To */}
-                  <div className="lg:col-span-2 space-y-2">
+                  <div className="space-y-2">
                     <Label className="text-sm font-medium text-gray-600">
                       To
                     </Label>
@@ -318,7 +319,7 @@ const Index = () => {
                   </div>
 
                   {/* Date */}
-                  <div className="lg:col-span-2 space-y-2">
+                  <div className="space-y-2">
                     <Label className="text-sm font-medium text-gray-600">
                       Date of Journey
                     </Label>
@@ -332,46 +333,23 @@ const Index = () => {
                         min={today}
                       />
                     </div>
-
-                    {/* Today/Tomorrow buttons */}
-                    <div className="flex gap-2 mt-2">
-                      <Button
-                        variant="outline"
-                        size="sm"
-                        className="rounded-full bg-red-50 text-red-600 border-red-200"
-                        onClick={() => setSelectedDate(today)}
-                      >
-                        Today
-                      </Button>
-                      <Button
-                        variant="outline"
-                        size="sm"
-                        className="rounded-full"
-                        onClick={() => {
-                          const tomorrow = new Date();
-                          tomorrow.setDate(tomorrow.getDate() + 1);
-                          setSelectedDate(tomorrow.toISOString().split("T")[0]);
-                        }}
-                      >
-                        Tomorrow
-                      </Button>
-                    </div>
                   </div>
+                </div>
 
+                {/* Search Button and Booking Options Row */}
+                <div className="flex flex-col md:flex-row items-center justify-between gap-4">
                   {/* Search Button */}
-                  <div className="lg:col-span-1">
+                  <div className="w-full md:w-auto">
                     <Button
                       onClick={handleSearch}
-                      className="w-full h-14 text-lg bg-red-600 hover:bg-red-700 rounded-2xl"
+                      className="w-full md:w-auto h-14 px-12 text-lg bg-red-600 hover:bg-red-700 rounded-2xl"
                     >
                       <Search className="h-5 w-5 mr-2" />
                       Search
                     </Button>
                   </div>
-                </div>
 
-                {/* Booking for women toggle */}
-                <div className="flex items-center justify-end mt-4">
+                  {/* Booking for women toggle */}
                   <div className="flex items-center space-x-3">
                     <div className="w-8 h-8 bg-pink-100 rounded-full flex items-center justify-center">
                       <User className="h-5 w-5 text-pink-600" />
