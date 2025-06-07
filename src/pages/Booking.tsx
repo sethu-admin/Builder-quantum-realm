@@ -4,7 +4,6 @@ import { Input } from "@/components/ui/input";
 import { Card, CardContent } from "@/components/ui/card";
 import { Switch } from "@/components/ui/switch";
 import { Label } from "@/components/ui/label";
-import { useNavigate } from "react-router-dom";
 import {
   Search,
   ArrowLeftRight,
@@ -21,12 +20,11 @@ import {
   Train,
   ArrowRight,
   Bus,
-  Star,
-  Shield,
-  Clock3,
+  ArrowLeft,
 } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
-const Index = () => {
+const Booking = () => {
   const navigate = useNavigate();
   const [fromCity, setFromCity] = useState("");
   const [toCity, setToCity] = useState("");
@@ -105,9 +103,19 @@ const Index = () => {
       <header className="bg-white shadow-sm border-b sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-8">
           <div className="flex justify-between items-center h-16">
-            <div className="flex items-center space-x-2">
-              <div className="text-2xl font-bold text-red-600">redRoute</div>
-              <div className="text-sm text-gray-500">-- across the limit</div>
+            <div className="flex items-center space-x-4">
+              <Button
+                variant="ghost"
+                onClick={() => navigate("/")}
+                className="flex items-center space-x-2 hover:bg-gray-100 rounded-xl"
+              >
+                <ArrowLeft className="h-4 w-4" />
+                <span>Back</span>
+              </Button>
+              <div className="flex items-center space-x-2">
+                <div className="text-2xl font-bold text-red-600">redRoute</div>
+                <div className="text-sm text-gray-500">-- across the limit</div>
+              </div>
             </div>
 
             <Button
@@ -145,94 +153,153 @@ const Index = () => {
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-8 py-20">
-          <div className="text-center text-white space-y-12">
-            {/* Welcome Content */}
-            <div className="space-y-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left Side - Hero Content */}
+            <div className="text-white space-y-8">
               <div className="space-y-6">
                 <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
-                  Welcome to India's <span className="text-blue-400">#1</span>
+                  Book Your <span className="text-blue-400">Perfect</span>
                   <br />
                   <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-                    Bus Booking
-                  </span>{" "}
-                  Platform
+                    Bus Journey
+                  </span>
                 </h1>
-                <p className="text-xl text-gray-300 leading-relaxed max-w-2xl mx-auto">
-                  Experience seamless travel with our premium bus services
-                  across India. Book your journey with confidence and comfort.
+                <p className="text-xl text-gray-300 leading-relaxed max-w-lg">
+                  Find and book the perfect bus for your travel. Experience
+                  seamless booking with our premium services.
                 </p>
               </div>
 
               {/* Trust Indicators */}
-              <div className="flex items-center justify-center space-x-12">
+              <div className="flex items-center space-x-8">
                 <div className="flex items-center space-x-2">
-                  <Star className="h-6 w-6 text-yellow-400 fill-current" />
-                  <span className="text-lg">4.8/5 Rating</span>
+                  <div className="w-2 h-2 bg-green-400 rounded-full"></div>
+                  <span className="text-sm">Live Tracking</span>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <Shield className="h-6 w-6 text-green-400" />
-                  <span className="text-lg">Secure Booking</span>
+                  <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
+                  <span className="text-sm">Instant Booking</span>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <Clock3 className="h-6 w-6 text-blue-400" />
-                  <span className="text-lg">24/7 Support</span>
+                  <div className="w-2 h-2 bg-purple-400 rounded-full"></div>
+                  <span className="text-sm">Best Prices</span>
                 </div>
               </div>
             </div>
 
-            {/* Large Company Name with Different Font */}
-            <div className="space-y-8 py-16">
-              <div className="text-center">
-                <h2
-                  className="text-8xl lg:text-9xl font-black tracking-wider"
-                  style={{ fontFamily: 'Impact, "Arial Black", sans-serif' }}
-                >
-                  <span className="bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500 bg-clip-text text-transparent">
-                    REDROUTE
-                  </span>
-                </h2>
-                <div className="text-2xl text-gray-300 font-light tracking-[0.5em] mt-4">
-                  TRANSPORTATION
-                </div>
-              </div>
+            {/* Right Side - Booking Form */}
+            <div className="lg:ml-8">
+              <Card className="bg-white/95 backdrop-blur-sm shadow-2xl rounded-3xl border-0">
+                <CardContent className="p-8">
+                  <div className="mb-6">
+                    <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                      Book Your Journey
+                    </h3>
+                    <p className="text-gray-600">
+                      Find and book the perfect bus for your travel
+                    </p>
+                  </div>
 
-              {/* Start Your Journey Bar */}
-              <div className="max-w-2xl mx-auto">
-                <div className="bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 p-1 rounded-full shadow-2xl">
-                  <Button
-                    onClick={() => navigate("/booking")}
-                    className="w-full bg-white/10 backdrop-blur-sm rounded-full px-12 py-6 border border-white/20 hover:bg-white/20 transition-all duration-300 h-auto"
-                  >
-                    <div className="flex items-center justify-center space-x-4">
-                      <Bus className="h-8 w-8 text-white" />
-                      <span className="text-2xl font-bold text-white tracking-wide">
-                        START YOUR JOURNEY
-                      </span>
-                      <ArrowRight className="h-8 w-8 text-white animate-pulse" />
+                  {/* Input Fields */}
+                  <div className="space-y-6">
+                    {/* From and To with Swap */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-end">
+                      {/* From */}
+                      <div className="space-y-2">
+                        <Label className="text-sm font-semibold text-gray-700">
+                          From
+                        </Label>
+                        <div className="relative">
+                          <MapPin className="absolute left-4 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400" />
+                          <Input
+                            value={fromCity}
+                            onChange={(e) => setFromCity(e.target.value)}
+                            className="pl-12 h-14 text-lg rounded-2xl border-2 border-gray-200 focus:border-blue-500 transition-colors"
+                            placeholder="Enter departure city"
+                          />
+                        </div>
+                      </div>
+
+                      {/* To */}
+                      <div className="space-y-2">
+                        <Label className="text-sm font-semibold text-gray-700">
+                          To
+                        </Label>
+                        <div className="relative">
+                          <MapPin className="absolute left-4 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400" />
+                          <Input
+                            value={toCity}
+                            onChange={(e) => setToCity(e.target.value)}
+                            className="pl-12 h-14 text-lg rounded-2xl border-2 border-gray-200 focus:border-blue-500 transition-colors"
+                            placeholder="Enter destination city"
+                          />
+                        </div>
+                      </div>
                     </div>
-                  </Button>
-                </div>
-              </div>
-            </div>
 
-            {/* Statistics */}
-            <div className="grid grid-cols-3 gap-12 max-w-4xl mx-auto">
-              <div className="text-center">
-                <div className="text-4xl font-bold text-blue-400">50M+</div>
-                <div className="text-lg text-gray-400 mt-2">
-                  Happy Customers
-                </div>
-              </div>
-              <div className="text-center">
-                <div className="text-4xl font-bold text-purple-400">5000+</div>
-                <div className="text-lg text-gray-400 mt-2">Routes Covered</div>
-              </div>
-              <div className="text-center">
-                <div className="text-4xl font-bold text-green-400">99%</div>
-                <div className="text-lg text-gray-400 mt-2">
-                  On-Time Performance
-                </div>
-              </div>
+                    {/* Swap Button */}
+                    <div className="flex justify-center -my-2">
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        onClick={swapCities}
+                        className="rounded-full h-12 w-12 p-0 border-2 border-blue-200 hover:border-blue-400 hover:bg-blue-50 transition-colors"
+                      >
+                        <ArrowLeftRight className="h-5 w-5 text-blue-600" />
+                      </Button>
+                    </div>
+
+                    {/* Date */}
+                    <div className="space-y-2">
+                      <Label className="text-sm font-semibold text-gray-700">
+                        Date of Journey
+                      </Label>
+                      <div className="relative">
+                        <Calendar className="absolute left-4 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400" />
+                        <Input
+                          type="date"
+                          value={selectedDate}
+                          onChange={(e) => setSelectedDate(e.target.value)}
+                          className="pl-12 h-14 text-lg rounded-2xl border-2 border-gray-200 focus:border-blue-500 transition-colors"
+                          min={today}
+                        />
+                      </div>
+                    </div>
+
+                    {/* Booking Options */}
+                    <div className="bg-gray-50 rounded-2xl p-4">
+                      <div className="flex items-center justify-between">
+                        <div className="flex items-center space-x-3">
+                          <div className="w-10 h-10 bg-pink-100 rounded-full flex items-center justify-center">
+                            <User className="h-5 w-5 text-pink-600" />
+                          </div>
+                          <div>
+                            <div className="text-sm font-semibold text-gray-900">
+                              Booking for women
+                            </div>
+                            <div className="text-xs text-blue-600 cursor-pointer hover:text-blue-800">
+                              Know more
+                            </div>
+                          </div>
+                        </div>
+                        <Switch
+                          checked={freeCancellation}
+                          onCheckedChange={setFreeCancellation}
+                        />
+                      </div>
+                    </div>
+
+                    {/* Search Button */}
+                    <Button
+                      onClick={handleSearch}
+                      className="w-full h-14 text-lg bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-200"
+                    >
+                      <Search className="h-6 w-6 mr-3" />
+                      Search Buses
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </div>
@@ -320,4 +387,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Booking;
