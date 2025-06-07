@@ -62,48 +62,6 @@ const Booking = () => {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Header - RedBus Style */}
-      <header className="bg-white border-b border-gray-200">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="flex justify-between items-center h-16">
-            {/* Left side - Logo and Navigation */}
-            <div className="flex items-center space-x-8">
-              <div className="flex items-center space-x-2">
-                <div className="text-2xl font-bold text-red-600">redRoute</div>
-              </div>
-
-              {/* Navigation Tabs */}
-              <div className="flex items-center space-x-6">
-                <div className="flex items-center space-x-2 text-red-600 border-b-2 border-red-600 pb-4">
-                  <Bus className="h-5 w-5" />
-                  <span className="font-medium">Bus tickets</span>
-                </div>
-                <div className="flex items-center space-x-2 text-gray-600 hover:text-red-600 pb-4">
-                  <Train className="h-5 w-5" />
-                  <span className="font-medium">Train tickets</span>
-                </div>
-              </div>
-            </div>
-
-            {/* Right side - User Actions */}
-            <div className="flex items-center space-x-6">
-              <div className="flex items-center space-x-2 text-gray-600 hover:text-gray-800">
-                <Menu className="h-4 w-4" />
-                <span className="text-sm">Bookings</span>
-              </div>
-              <div className="flex items-center space-x-2 text-gray-600 hover:text-gray-800">
-                <HelpCircle className="h-4 w-4" />
-                <span className="text-sm">Help</span>
-              </div>
-              <div className="flex items-center space-x-2 text-gray-600 hover:text-gray-800">
-                <User className="h-4 w-4" />
-                <span className="text-sm">Account</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
-
       {/* Hero Section - Real REDROUTE Bus */}
       <div className="relative h-96 overflow-hidden bg-gradient-to-br from-green-100 via-green-200 to-green-300">
         {/* Realistic Background Environment */}
