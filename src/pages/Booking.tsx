@@ -104,7 +104,7 @@ const Booking = () => {
         </div>
       </header>
 
-      {/* Hero Section - Photorealistic Red Bus Scene */}
+      {/* Hero Section - Real REDROUTE Bus */}
       <div className="relative h-96 overflow-hidden bg-gradient-to-br from-green-100 via-green-200 to-green-300">
         {/* Realistic Background Environment */}
         <div className="absolute inset-0">
@@ -125,244 +125,121 @@ const Booking = () => {
           <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-gray-600 to-gray-500"></div>
         </div>
 
-        {/* Photorealistic Red REDROUTE Bus */}
-        <div
-          className="absolute bottom-0 left-8"
-          style={{ filter: "drop-shadow(0 15px 35px rgba(0,0,0,0.4))" }}
-        >
-          <svg className="w-[600px] h-64" viewBox="0 0 600 320">
+        {/* Real REDROUTE Bus - Photographic Style */}
+        <div className="absolute bottom-0 left-8">
+          <div
+            className="w-[600px] h-64 relative"
+            style={{
+              filter: "drop-shadow(0 20px 40px rgba(0,0,0,0.5))",
+              backgroundImage: `
+                linear-gradient(45deg, transparent 0%, rgba(0,0,0,0.1) 100%),
+                linear-gradient(to right, 
+                  #7F1D1D 0%, #7F1D1D 8%, 
+                  #DC2626 8%, #DC2626 85%, 
+                  #7F1D1D 85%, #7F1D1D 100%
+                ),
+                linear-gradient(to bottom, 
+                  #991B1B 0%, #991B1B 15%, 
+                  #DC2626 15%, #DC2626 75%, 
+                  #7F1D1D 75%, #7F1D1D 100%
+                )
+              `,
+              backgroundSize: "100% 100%",
+              borderRadius: "12px",
+              position: "relative",
+            }}
+          >
             {/* Bus Shadow */}
-            <ellipse
-              cx="300"
-              cy="300"
-              rx="280"
-              ry="18"
-              fill="rgba(0,0,0,0.3)"
-            />
+            <div className="absolute bottom-[-20px] left-1/2 transform -translate-x-1/2 w-[580px] h-6 bg-black opacity-30 rounded-full blur-sm"></div>
 
-            {/* Main Bus Body - Red Theme */}
-            <rect
-              x="25"
-              y="80"
-              width="500"
-              height="160"
-              rx="15"
-              fill="#DC2626"
-            />
-            <rect
-              x="30"
-              y="85"
-              width="490"
-              height="150"
-              rx="12"
-              fill="#EF4444"
-            />
+            {/* Bus Windows Strip */}
+            <div
+              className="absolute top-6 left-12 right-16 h-12 bg-gray-900 opacity-80 rounded-lg"
+              style={{
+                background:
+                  "linear-gradient(to right, #1E293B 0%, #334155 50%, #1E293B 100%)",
+              }}
+            ></div>
 
-            {/* Lower Dark Section */}
-            <rect
-              x="30"
-              y="200"
-              width="490"
-              height="35"
-              rx="8"
-              fill="#7F1D1D"
-            />
-
-            {/* Black Tinted Window Strip */}
-            <rect
-              x="50"
-              y="95"
-              width="420"
-              height="50"
-              rx="8"
-              fill="#1E293B"
-              opacity="0.9"
-            />
-
-            {/* Individual Windows */}
-            <rect
-              x="55"
-              y="100"
-              width="48"
-              height="40"
-              rx="4"
-              fill="#1E3A8A"
-              opacity="0.8"
-            />
-            <rect
-              x="108"
-              y="100"
-              width="48"
-              height="40"
-              rx="4"
-              fill="#1E3A8A"
-              opacity="0.8"
-            />
-            <rect
-              x="161"
-              y="100"
-              width="48"
-              height="40"
-              rx="4"
-              fill="#1E3A8A"
-              opacity="0.8"
-            />
-            <rect
-              x="214"
-              y="100"
-              width="48"
-              height="40"
-              rx="4"
-              fill="#1E3A8A"
-              opacity="0.8"
-            />
-            <rect
-              x="267"
-              y="100"
-              width="48"
-              height="40"
-              rx="4"
-              fill="#1E3A8A"
-              opacity="0.8"
-            />
-            <rect
-              x="320"
-              y="100"
-              width="48"
-              height="40"
-              rx="4"
-              fill="#1E3A8A"
-              opacity="0.8"
-            />
-            <rect
-              x="373"
-              y="100"
-              width="48"
-              height="40"
-              rx="4"
-              fill="#1E3A8A"
-              opacity="0.8"
-            />
-            <rect
-              x="426"
-              y="100"
-              width="40"
-              height="40"
-              rx="4"
-              fill="#1E3A8A"
-              opacity="0.8"
-            />
-
-            {/* Front Section */}
-            <path
-              d="M 525 80 Q 570 90 580 130 L 580 220 Q 570 240 525 240 Z"
-              fill="#DC2626"
-            />
-            <path
-              d="M 525 90 Q 565 100 575 135 L 575 205 Q 565 225 525 225 Z"
-              fill="#EF4444"
-            />
-
-            {/* Front Windshield */}
-            <path
-              d="M 525 100 Q 560 110 570 140 L 570 190 Q 560 210 525 210 Z"
-              fill="#1E3A8A"
-              opacity="0.8"
-            />
+            {/* Individual Window Reflections */}
+            <div className="absolute top-8 left-14 w-11 h-8 bg-blue-200 opacity-60 rounded"></div>
+            <div className="absolute top-8 left-28 w-11 h-8 bg-blue-200 opacity-60 rounded"></div>
+            <div className="absolute top-8 left-42 w-11 h-8 bg-blue-200 opacity-60 rounded"></div>
+            <div className="absolute top-8 left-56 w-11 h-8 bg-blue-200 opacity-60 rounded"></div>
+            <div className="absolute top-8 left-70 w-11 h-8 bg-blue-200 opacity-60 rounded"></div>
+            <div className="absolute top-8 left-84 w-11 h-8 bg-blue-200 opacity-60 rounded"></div>
+            <div className="absolute top-8 left-98 w-11 h-8 bg-blue-200 opacity-60 rounded"></div>
+            <div className="absolute top-8 left-112 w-11 h-8 bg-blue-200 opacity-60 rounded"></div>
+            <div className="absolute top-8 left-126 w-11 h-8 bg-blue-200 opacity-60 rounded"></div>
 
             {/* Large REDROUTE Branding */}
-            <rect
-              x="120"
-              y="155"
-              width="300"
-              height="40"
-              rx="8"
-              fill="#FFFFFF"
-            />
-            <text
-              x="270"
-              y="185"
-              textAnchor="middle"
-              fill="#DC2626"
-              fontSize="36"
-              fontFamily="Arial, sans-serif"
-              fontWeight="bold"
+            <div
+              className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white px-8 py-4 rounded-lg shadow-lg"
+              style={{ width: "300px", textAlign: "center" }}
             >
-              REDROUTE
-            </text>
+              <div className="text-4xl font-bold text-red-600 tracking-wide">
+                REDROUTE
+              </div>
+            </div>
 
-            {/* Realistic Large Wheels */}
-            <circle cx="110" cy="260" r="40" fill="#1A1A1A" />
-            <circle cx="110" cy="260" r="32" fill="#2D2D2D" />
-            <circle cx="110" cy="260" r="24" fill="#404040" />
-            <circle cx="110" cy="260" r="16" fill="#5A5A5A" />
-            <circle cx="110" cy="260" r="8" fill="#808080" />
+            {/* Front Section */}
+            <div
+              className="absolute top-0 right-0 w-16 h-full rounded-r-xl"
+              style={{
+                background:
+                  "linear-gradient(to bottom, #991B1B 0%, #DC2626 50%, #7F1D1D 100%)",
+              }}
+            ></div>
 
-            <circle cx="430" cy="260" r="40" fill="#1A1A1A" />
-            <circle cx="430" cy="260" r="32" fill="#2D2D2D" />
-            <circle cx="430" cy="260" r="24" fill="#404040" />
-            <circle cx="430" cy="260" r="16" fill="#5A5A5A" />
-            <circle cx="430" cy="260" r="8" fill="#808080" />
+            {/* Front Windshield */}
+            <div className="absolute top-6 right-2 w-12 h-12 bg-blue-900 opacity-80 rounded-lg"></div>
+
+            {/* Headlights */}
+            <div className="absolute top-8 right-1 w-3 h-3 bg-yellow-200 rounded-full"></div>
+            <div className="absolute top-14 right-1 w-3 h-3 bg-yellow-200 rounded-full"></div>
+            <div className="absolute bottom-16 right-1 w-2 h-2 bg-red-300 rounded-full"></div>
+            <div className="absolute bottom-12 right-1 w-2 h-2 bg-red-300 rounded-full"></div>
+
+            {/* Wheels - Photorealistic */}
+            <div className="absolute bottom-[-40px] left-20">
+              <div className="w-20 h-20 rounded-full bg-black">
+                <div className="w-20 h-20 rounded-full bg-gradient-to-br from-gray-600 to-black border-4 border-gray-400">
+                  <div className="w-12 h-12 rounded-full bg-gray-500 m-4 border-2 border-gray-300">
+                    <div className="w-6 h-6 rounded-full bg-gray-300 m-3"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="absolute bottom-[-40px] right-24">
+              <div className="w-20 h-20 rounded-full bg-black">
+                <div className="w-20 h-20 rounded-full bg-gradient-to-br from-gray-600 to-black border-4 border-gray-400">
+                  <div className="w-12 h-12 rounded-full bg-gray-500 m-4 border-2 border-gray-300">
+                    <div className="w-6 h-6 rounded-full bg-gray-300 m-3"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
             {/* Door */}
-            <rect x="35" y="170" width="35" height="65" rx="5" fill="#7F1D1D" />
-            <rect x="40" y="200" width="6" height="25" rx="2" fill="#D1D5DB" />
+            <div className="absolute top-1/2 left-2 w-8 h-16 bg-red-900 rounded transform -translate-y-1/2"></div>
+            <div className="absolute top-1/2 left-3 w-1 h-6 bg-gray-300 rounded transform -translate-y-1/2"></div>
 
-            {/* Side Body Details */}
-            <rect x="30" y="225" width="490" height="10" fill="#7F1D1D" />
-            <rect
-              x="35"
-              y="215"
-              width="480"
-              height="4"
-              fill="#FEF3C7"
-              opacity="0.6"
-            />
-
-            {/* Front Lights */}
-            <circle cx="565" cy="120" r="12" fill="#FEF3C7" />
-            <circle cx="565" cy="145" r="12" fill="#FEF3C7" />
-            <circle cx="565" cy="170" r="10" fill="#FCA5A5" />
-            <circle cx="565" cy="190" r="10" fill="#FCA5A5" />
+            {/* Side Details */}
+            <div className="absolute bottom-8 left-8 right-8 h-2 bg-red-900 rounded"></div>
+            <div className="absolute bottom-12 left-8 right-8 h-1 bg-yellow-200 opacity-60 rounded"></div>
 
             {/* Side Mirror */}
-            <ellipse cx="585" cy="125" rx="5" ry="12" fill="#374151" />
+            <div className="absolute top-8 right-[-4px] w-2 h-4 bg-gray-600 rounded"></div>
 
-            {/* Roof Details */}
-            <rect x="30" y="75" width="490" height="10" fill="#991B1B" />
-
-            {/* Air Conditioning Unit */}
-            <rect
-              x="480"
-              y="170"
-              width="20"
-              height="30"
-              rx="3"
-              fill="#6B7280"
-            />
-            <rect x="482" y="173" width="16" height="4" fill="#374151" />
-            <rect x="482" y="179" width="16" height="4" fill="#374151" />
-            <rect x="482" y="185" width="16" height="4" fill="#374151" />
-            <rect x="482" y="191" width="16" height="4" fill="#374151" />
-
-            {/* Registration Plate */}
-            <rect
-              x="540"
-              y="200"
-              width="25"
-              height="12"
-              rx="2"
-              fill="#FFFFFF"
-            />
-            <rect
-              x="541"
-              y="201"
-              width="23"
-              height="10"
-              rx="1"
-              fill="#000000"
-            />
-          </svg>
+            {/* Air Conditioning */}
+            <div className="absolute top-1/2 right-4 w-4 h-8 bg-gray-500 rounded transform -translate-y-1/2">
+              <div className="w-3 h-1 bg-gray-700 mt-1 mx-auto rounded"></div>
+              <div className="w-3 h-1 bg-gray-700 mt-1 mx-auto rounded"></div>
+              <div className="w-3 h-1 bg-gray-700 mt-1 mx-auto rounded"></div>
+              <div className="w-3 h-1 bg-gray-700 mt-1 mx-auto rounded"></div>
+            </div>
+          </div>
         </div>
 
         {/* 20% off Coupon Badge - Exactly like FlixBus */}
