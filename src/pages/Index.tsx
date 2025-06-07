@@ -180,158 +180,102 @@ const Index = () => {
             </svg>
           </div>
 
-          {/* Clean Minimalist Bus */}
+          {/* Flat Design Bus - Exact Reference Style */}
           <div className="absolute bottom-6 right-24">
-            <svg className="w-44 h-24" viewBox="0 0 220 120">
+            <svg className="w-48 h-26" viewBox="0 0 240 130">
               {/* Bus Shadow */}
               <ellipse
-                cx="110"
-                cy="110"
-                rx="85"
-                ry="6"
-                fill="rgba(0,0,0,0.15)"
+                cx="120"
+                cy="115"
+                rx="95"
+                ry="8"
+                fill="rgba(0,0,0,0.2)"
               />
 
-              {/* Gradient Definitions */}
-              <defs>
-                <linearGradient id="busBody" x1="0%" y1="0%" x2="0%" y2="100%">
-                  <stop offset="0%" stopColor="#F97316" />
-                  <stop offset="100%" stopColor="#EA580C" />
-                </linearGradient>
-                <linearGradient id="busTop" x1="0%" y1="0%" x2="0%" y2="100%">
-                  <stop offset="0%" stopColor="#1E293B" />
-                  <stop offset="100%" stopColor="#334155" />
-                </linearGradient>
-              </defs>
-
-              {/* Main Bus Body */}
+              {/* Main Bus Body - Pink/Coral */}
               <rect
-                x="15"
-                y="35"
-                width="150"
-                height="50"
-                rx="12"
-                fill="url(#busBody)"
+                x="10"
+                y="40"
+                width="170"
+                height="55"
+                rx="8"
+                fill="#F472B6"
               />
 
-              {/* Bus Top Section */}
+              {/* Bus Top Section - Dark Navy */}
               <rect
-                x="15"
+                x="10"
                 y="25"
-                width="150"
-                height="20"
-                rx="12"
-                fill="url(#busTop)"
+                width="170"
+                height="25"
+                rx="8"
+                fill="#1E293B"
               />
-              <rect x="15" y="35" width="150" height="10" fill="url(#busTop)" />
+              <rect x="10" y="40" width="170" height="8" fill="#1E293B" />
 
               {/* Front Section */}
               <path
-                d="M 165 25 Q 185 25 190 45 L 190 75 Q 185 85 165 85 Z"
-                fill="url(#busBody)"
+                d="M 180 25 Q 200 30 205 50 L 205 85 Q 200 95 180 95 Z"
+                fill="#F472B6"
               />
               <path
-                d="M 165 25 Q 180 25 185 35 L 185 55 Q 180 65 165 65 Z"
-                fill="url(#busTop)"
+                d="M 180 25 Q 195 30 200 45 L 200 65 Q 195 75 180 75 Z"
+                fill="#1E293B"
               />
 
-              {/* Windows - Clean Flat Style */}
+              {/* Large Window Strip */}
               <rect
-                x="25"
+                x="20"
                 y="30"
-                width="130"
-                height="18"
-                rx="6"
-                fill="#DBEAFE"
-                opacity="0.9"
-              />
-
-              {/* Window Divisions */}
-              <rect
-                x="45"
-                y="30"
-                width="1"
-                height="18"
-                fill="#1E293B"
-                opacity="0.3"
-              />
-              <rect
-                x="70"
-                y="30"
-                width="1"
-                height="18"
-                fill="#1E293B"
-                opacity="0.3"
-              />
-              <rect
-                x="95"
-                y="30"
-                width="1"
-                height="18"
-                fill="#1E293B"
-                opacity="0.3"
-              />
-              <rect
-                x="120"
-                y="30"
-                width="1"
-                height="18"
-                fill="#1E293B"
-                opacity="0.3"
-              />
-              <rect
-                x="145"
-                y="30"
-                width="1"
-                height="18"
-                fill="#1E293B"
-                opacity="0.3"
+                width="150"
+                height="15"
+                rx="3"
+                fill="#1E3A8A"
+                opacity="0.8"
               />
 
               {/* Front Windshield */}
               <path
-                d="M 165 30 Q 175 30 180 40 L 180 60 Q 175 70 165 70 Z"
-                fill="#BFDBFE"
-                opacity="0.9"
+                d="M 180 30 Q 190 32 195 45 L 195 65 Q 190 75 180 75 Z"
+                fill="#1E3A8A"
+                opacity="0.8"
               />
 
-              {/* Simple Wheels */}
-              <circle cx="40" cy="95" r="15" fill="#374151" />
-              <circle cx="40" cy="95" r="10" fill="#6B7280" />
-              <circle cx="40" cy="95" r="6" fill="#9CA3AF" />
+              {/* Simple Flat Wheels */}
+              <circle cx="45" cy="105" r="18" fill="#374151" />
+              <circle cx="45" cy="105" r="12" fill="#4B5563" />
 
-              <circle cx="145" cy="95" r="15" fill="#374151" />
-              <circle cx="145" cy="95" r="10" fill="#6B7280" />
-              <circle cx="145" cy="95" r="6" fill="#9CA3AF" />
+              <circle cx="155" cy="105" r="18" fill="#374151" />
+              <circle cx="155" cy="105" r="12" fill="#4B5563" />
 
-              {/* Simple Door */}
-              <rect
-                x="18"
-                y="55"
-                width="12"
-                height="25"
-                rx="3"
-                fill="#1E293B"
-              />
-              <rect x="20" y="70" width="2" height="8" rx="1" fill="#94A3B8" />
-
-              {/* Side Stripe */}
+              {/* Door */}
               <rect
                 x="15"
                 y="60"
-                width="150"
-                height="4"
+                width="15"
+                height="30"
                 rx="2"
                 fill="#1E293B"
-                opacity="0.2"
               />
 
-              {/* Simple Headlight */}
-              <circle cx="185" cy="50" r="5" fill="#FEF3C7" />
+              {/* Side Details */}
+              <rect x="10" y="68" width="170" height="3" fill="#EC4899" />
 
-              {/* Destination Display */}
-              <rect x="50" y="20" width="80" height="8" rx="4" fill="#1E293B" />
-              <rect x="52" y="22" width="76" height="4" rx="2" fill="#22C55E" />
+              {/* Simple Headlight */}
+              <circle cx="200" cy="55" r="6" fill="#FDE047" />
+
+              {/* Minimal Details */}
+              <rect
+                x="185"
+                y="45"
+                width="8"
+                height="20"
+                rx="2"
+                fill="#DC2626"
+              />
+
+              {/* Side Mirror */}
+              <rect x="205" y="48" width="3" height="6" rx="1" fill="#374151" />
             </svg>
           </div>
           {/* Hero Text */}
