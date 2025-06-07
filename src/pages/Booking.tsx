@@ -125,120 +125,40 @@ const Booking = () => {
           <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-gray-600 to-gray-500"></div>
         </div>
 
-        {/* Real REDROUTE Bus - Photographic Style */}
+        {/* Real REDROUTE Bus Image */}
         <div className="absolute bottom-0 left-8">
           <div
-            className="w-[600px] h-64 relative"
-            style={{
-              filter: "drop-shadow(0 20px 40px rgba(0,0,0,0.5))",
-              backgroundImage: `
-                linear-gradient(45deg, transparent 0%, rgba(0,0,0,0.1) 100%),
-                linear-gradient(to right, 
-                  #7F1D1D 0%, #7F1D1D 8%, 
-                  #DC2626 8%, #DC2626 85%, 
-                  #7F1D1D 85%, #7F1D1D 100%
-                ),
-                linear-gradient(to bottom, 
-                  #991B1B 0%, #991B1B 15%, 
-                  #DC2626 15%, #DC2626 75%, 
-                  #7F1D1D 75%, #7F1D1D 100%
-                )
-              `,
-              backgroundSize: "100% 100%",
-              borderRadius: "12px",
-              position: "relative",
-            }}
+            className="relative w-[600px] h-64"
+            style={{ filter: "drop-shadow(0 20px 40px rgba(0,0,0,0.5))" }}
           >
-            {/* Bus Shadow */}
-            <div className="absolute bottom-[-20px] left-1/2 transform -translate-x-1/2 w-[580px] h-6 bg-black opacity-30 rounded-full blur-sm"></div>
-
-            {/* Bus Windows Strip */}
-            <div
-              className="absolute top-6 left-12 right-16 h-12 bg-gray-900 opacity-80 rounded-lg"
+            {/* Bus Image - Replace this URL with your actual REDROUTE bus image */}
+            <img
+              src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80"
+              alt="REDROUTE Bus"
+              className="w-full h-full object-cover rounded-xl"
               style={{
-                background:
-                  "linear-gradient(to right, #1E293B 0%, #334155 50%, #1E293B 100%)",
+                filter: "hue-rotate(0deg) saturate(1.2) brightness(1.1)",
               }}
-            ></div>
+            />
 
-            {/* Individual Window Reflections */}
-            <div className="absolute top-8 left-14 w-11 h-8 bg-blue-200 opacity-60 rounded"></div>
-            <div className="absolute top-8 left-28 w-11 h-8 bg-blue-200 opacity-60 rounded"></div>
-            <div className="absolute top-8 left-42 w-11 h-8 bg-blue-200 opacity-60 rounded"></div>
-            <div className="absolute top-8 left-56 w-11 h-8 bg-blue-200 opacity-60 rounded"></div>
-            <div className="absolute top-8 left-70 w-11 h-8 bg-blue-200 opacity-60 rounded"></div>
-            <div className="absolute top-8 left-84 w-11 h-8 bg-blue-200 opacity-60 rounded"></div>
-            <div className="absolute top-8 left-98 w-11 h-8 bg-blue-200 opacity-60 rounded"></div>
-            <div className="absolute top-8 left-112 w-11 h-8 bg-blue-200 opacity-60 rounded"></div>
-            <div className="absolute top-8 left-126 w-11 h-8 bg-blue-200 opacity-60 rounded"></div>
-
-            {/* Large REDROUTE Branding */}
-            <div
-              className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white px-8 py-4 rounded-lg shadow-lg"
-              style={{ width: "300px", textAlign: "center" }}
-            >
+            {/* REDROUTE Branding Overlay */}
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white px-8 py-4 rounded-lg shadow-xl border-2 border-red-200">
               <div className="text-4xl font-bold text-red-600 tracking-wide">
                 REDROUTE
               </div>
             </div>
 
-            {/* Front Section */}
+            {/* Red Color Overlay to make bus appear red */}
             <div
-              className="absolute top-0 right-0 w-16 h-full rounded-r-xl"
+              className="absolute inset-0 rounded-xl mix-blend-multiply opacity-40"
               style={{
                 background:
-                  "linear-gradient(to bottom, #991B1B 0%, #DC2626 50%, #7F1D1D 100%)",
+                  "linear-gradient(45deg, #DC2626 0%, #EF4444 50%, #DC2626 100%)",
               }}
             ></div>
 
-            {/* Front Windshield */}
-            <div className="absolute top-6 right-2 w-12 h-12 bg-blue-900 opacity-80 rounded-lg"></div>
-
-            {/* Headlights */}
-            <div className="absolute top-8 right-1 w-3 h-3 bg-yellow-200 rounded-full"></div>
-            <div className="absolute top-14 right-1 w-3 h-3 bg-yellow-200 rounded-full"></div>
-            <div className="absolute bottom-16 right-1 w-2 h-2 bg-red-300 rounded-full"></div>
-            <div className="absolute bottom-12 right-1 w-2 h-2 bg-red-300 rounded-full"></div>
-
-            {/* Wheels - Photorealistic */}
-            <div className="absolute bottom-[-40px] left-20">
-              <div className="w-20 h-20 rounded-full bg-black">
-                <div className="w-20 h-20 rounded-full bg-gradient-to-br from-gray-600 to-black border-4 border-gray-400">
-                  <div className="w-12 h-12 rounded-full bg-gray-500 m-4 border-2 border-gray-300">
-                    <div className="w-6 h-6 rounded-full bg-gray-300 m-3"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="absolute bottom-[-40px] right-24">
-              <div className="w-20 h-20 rounded-full bg-black">
-                <div className="w-20 h-20 rounded-full bg-gradient-to-br from-gray-600 to-black border-4 border-gray-400">
-                  <div className="w-12 h-12 rounded-full bg-gray-500 m-4 border-2 border-gray-300">
-                    <div className="w-6 h-6 rounded-full bg-gray-300 m-3"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Door */}
-            <div className="absolute top-1/2 left-2 w-8 h-16 bg-red-900 rounded transform -translate-y-1/2"></div>
-            <div className="absolute top-1/2 left-3 w-1 h-6 bg-gray-300 rounded transform -translate-y-1/2"></div>
-
-            {/* Side Details */}
-            <div className="absolute bottom-8 left-8 right-8 h-2 bg-red-900 rounded"></div>
-            <div className="absolute bottom-12 left-8 right-8 h-1 bg-yellow-200 opacity-60 rounded"></div>
-
-            {/* Side Mirror */}
-            <div className="absolute top-8 right-[-4px] w-2 h-4 bg-gray-600 rounded"></div>
-
-            {/* Air Conditioning */}
-            <div className="absolute top-1/2 right-4 w-4 h-8 bg-gray-500 rounded transform -translate-y-1/2">
-              <div className="w-3 h-1 bg-gray-700 mt-1 mx-auto rounded"></div>
-              <div className="w-3 h-1 bg-gray-700 mt-1 mx-auto rounded"></div>
-              <div className="w-3 h-1 bg-gray-700 mt-1 mx-auto rounded"></div>
-              <div className="w-3 h-1 bg-gray-700 mt-1 mx-auto rounded"></div>
-            </div>
+            {/* Bus Shadow */}
+            <div className="absolute bottom-[-20px] left-1/2 transform -translate-x-1/2 w-[580px] h-6 bg-black opacity-30 rounded-full blur-sm"></div>
           </div>
         </div>
 
