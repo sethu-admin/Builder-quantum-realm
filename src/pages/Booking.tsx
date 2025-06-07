@@ -104,252 +104,269 @@ const Booking = () => {
         </div>
       </header>
 
-      {/* Hero Section - Realistic Red Bus Scene */}
-      <div className="relative h-96 bg-gradient-to-r from-gray-100 via-gray-50 to-gray-100 overflow-hidden">
-        {/* Background Landscape */}
-        <div className="absolute inset-0 bg-gradient-to-b from-blue-200 via-green-100 to-green-200">
-          {/* Sky with Clouds */}
-          <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-blue-200 to-blue-100">
-            {/* Clouds */}
-            <div className="absolute top-4 left-20 w-16 h-8 bg-white rounded-full opacity-70"></div>
-            <div className="absolute top-6 left-60 w-12 h-6 bg-white rounded-full opacity-60"></div>
-            <div className="absolute top-8 right-32 w-20 h-10 bg-white rounded-full opacity-75"></div>
-            <div className="absolute top-12 right-80 w-14 h-7 bg-white rounded-full opacity-65"></div>
-          </div>
+      {/* Hero Section - Realistic Red Bus Scene like FlixBus */}
+      <div
+        className="relative h-96 overflow-hidden"
+        style={{
+          backgroundImage: `linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.1)),
+                         url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 400'%3E%3Crect width='1200' height='400' fill='%2398A2B3'/%3E%3Cpath d='M0,400 L1200,400 L1200,200 Q600,150 0,200 Z' fill='%2322C55E'/%3E%3Cpath d='M0,400 L1200,400 L1200,250 Q600,200 0,250 Z' fill='%2316A34A'/%3E%3C/svg%3E")`,
+          backgroundSize: "cover",
+          backgroundPosition: "center bottom",
+        }}
+      >
+        {/* Natural Environment Details */}
+        <div className="absolute inset-0">
+          {/* Trees scattered in background */}
+          <div className="absolute bottom-32 left-12 w-8 h-16 bg-green-800 rounded-full opacity-80"></div>
+          <div className="absolute bottom-28 left-24 w-6 h-12 bg-green-700 rounded-full opacity-70"></div>
+          <div className="absolute bottom-30 left-40 w-10 h-20 bg-green-800 rounded-full opacity-85"></div>
+          <div className="absolute bottom-32 left-60 w-7 h-14 bg-green-700 rounded-full opacity-75"></div>
 
-          {/* Trees and Nature */}
-          <div className="absolute bottom-20 left-0 right-0 h-32">
-            {/* Tree Silhouettes */}
-            <svg
-              className="w-full h-full"
-              viewBox="0 0 1200 120"
-              preserveAspectRatio="none"
-            >
-              <rect x="0" y="80" width="1200" height="40" fill="#22C55E" />
+          <div className="absolute bottom-28 right-80 w-9 h-18 bg-green-800 rounded-full opacity-80"></div>
+          <div className="absolute bottom-30 right-100 w-8 h-16 bg-green-700 rounded-full opacity-70"></div>
+          <div className="absolute bottom-32 right-120 w-11 h-22 bg-green-800 rounded-full opacity-85"></div>
 
-              {/* Trees */}
-              <circle cx="100" cy="70" r="15" fill="#16A34A" />
-              <rect x="98" y="70" width="4" height="20" fill="#A16207" />
-
-              <circle cx="200" cy="65" r="18" fill="#16A34A" />
-              <rect x="198" y="65" width="4" height="25" fill="#A16207" />
-
-              <circle cx="300" cy="75" r="12" fill="#15803D" />
-              <rect x="298" y="75" width="4" height="15" fill="#A16207" />
-
-              <circle cx="450" cy="60" r="20" fill="#16A34A" />
-              <rect x="448" y="60" width="4" height="30" fill="#A16207" />
-
-              <circle cx="600" cy="70" r="16" fill="#15803D" />
-              <rect x="598" y="70" width="4" height="20" fill="#A16207" />
-
-              <circle cx="750" cy="65" r="14" fill="#16A34A" />
-              <rect x="748" y="65" width="4" height="25" fill="#A16207" />
-
-              <circle cx="900" cy="75" r="17" fill="#15803D" />
-              <rect x="898" y="75" width="4" height="15" fill="#A16207" />
-
-              <circle cx="1050" cy="70" r="19" fill="#16A34A" />
-              <rect x="1048" y="70" width="4" height="20" fill="#A16207" />
-            </svg>
-          </div>
-
-          {/* Road */}
-          <div className="absolute bottom-0 left-0 right-0 h-20 bg-gray-600">
-            {/* Road markings */}
-            <div className="absolute top-8 left-0 right-0 h-1 bg-yellow-300"></div>
-            <div className="absolute bottom-8 left-0 right-0 h-0.5 bg-white opacity-80"></div>
-          </div>
+          {/* Road surface */}
+          <div className="absolute bottom-0 left-0 right-0 h-16 bg-gray-700"></div>
+          <div className="absolute bottom-6 left-0 right-0 h-1 bg-yellow-300 opacity-80"></div>
         </div>
 
-        {/* Large Red REDROUTE Bus */}
-        <div className="absolute bottom-0 right-20">
-          <svg className="w-80 h-48" viewBox="0 0 400 240">
-            {/* Bus Shadow */}
+        {/* Large Realistic Red REDROUTE Bus */}
+        <div className="absolute bottom-0 left-1/4 transform -translate-x-1/2">
+          <svg
+            className="w-96 h-56"
+            viewBox="0 0 480 280"
+            style={{ filter: "drop-shadow(0 10px 20px rgba(0,0,0,0.3))" }}
+          >
+            {/* Bus Shadow on ground */}
             <ellipse
-              cx="200"
-              cy="220"
-              rx="180"
-              ry="12"
-              fill="rgba(0,0,0,0.3)"
+              cx="240"
+              cy="260"
+              rx="220"
+              ry="15"
+              fill="rgba(0,0,0,0.4)"
             />
 
             {/* Main Bus Body - Red Theme */}
             <rect
               x="20"
-              y="80"
-              width="320"
-              height="120"
-              rx="8"
+              y="90"
+              width="400"
+              height="140"
+              rx="12"
               fill="#DC2626"
             />
             <rect
               x="25"
-              y="85"
-              width="310"
-              height="110"
-              rx="6"
+              y="95"
+              width="390"
+              height="130"
+              rx="10"
+              fill="#EF4444"
+            />
+
+            {/* Lower Body Panel */}
+            <rect
+              x="25"
+              y="180"
+              width="390"
+              height="45"
+              rx="8"
               fill="#B91C1C"
             />
 
-            {/* Bus Windows */}
+            {/* Large Window Strip */}
             <rect
               x="40"
-              y="95"
-              width="260"
-              height="35"
-              rx="4"
+              y="105"
+              width="340"
+              height="45"
+              rx="6"
               fill="#1E3A8A"
-              opacity="0.8"
+              opacity="0.85"
             />
 
             {/* Individual Window Segments */}
             <rect
               x="45"
-              y="100"
-              width="30"
-              height="25"
-              rx="2"
+              y="110"
+              width="38"
+              height="35"
+              rx="3"
               fill="#DBEAFE"
               opacity="0.9"
             />
             <rect
-              x="80"
-              y="100"
-              width="30"
-              height="25"
-              rx="2"
+              x="88"
+              y="110"
+              width="38"
+              height="35"
+              rx="3"
               fill="#DBEAFE"
               opacity="0.9"
             />
             <rect
-              x="115"
-              y="100"
-              width="30"
-              height="25"
-              rx="2"
+              x="131"
+              y="110"
+              width="38"
+              height="35"
+              rx="3"
               fill="#DBEAFE"
               opacity="0.9"
             />
             <rect
-              x="150"
-              y="100"
-              width="30"
-              height="25"
-              rx="2"
+              x="174"
+              y="110"
+              width="38"
+              height="35"
+              rx="3"
               fill="#DBEAFE"
               opacity="0.9"
             />
             <rect
-              x="185"
-              y="100"
-              width="30"
-              height="25"
-              rx="2"
+              x="217"
+              y="110"
+              width="38"
+              height="35"
+              rx="3"
               fill="#DBEAFE"
               opacity="0.9"
             />
             <rect
-              x="220"
-              y="100"
-              width="30"
-              height="25"
-              rx="2"
+              x="260"
+              y="110"
+              width="38"
+              height="35"
+              rx="3"
               fill="#DBEAFE"
               opacity="0.9"
             />
             <rect
-              x="255"
-              y="100"
+              x="303"
+              y="110"
+              width="38"
+              height="35"
+              rx="3"
+              fill="#DBEAFE"
+              opacity="0.9"
+            />
+            <rect
+              x="346"
+              y="110"
               width="30"
-              height="25"
-              rx="2"
+              height="35"
+              rx="3"
               fill="#DBEAFE"
               opacity="0.9"
             />
 
             {/* Front Section */}
             <path
-              d="M 340 80 Q 375 90 385 120 L 385 180 Q 375 200 340 200 Z"
+              d="M 420 90 Q 460 100 470 140 L 470 210 Q 460 230 420 230 Z"
               fill="#DC2626"
             />
             <path
-              d="M 340 90 Q 370 100 378 130 L 378 170 Q 370 190 340 190 Z"
-              fill="#B91C1C"
+              d="M 420 100 Q 450 110 458 145 L 458 195 Q 450 215 420 215 Z"
+              fill="#EF4444"
             />
 
             {/* Front Windshield */}
             <path
-              d="M 340 100 Q 365 110 372 135 L 372 165 Q 365 185 340 185 Z"
+              d="M 420 110 Q 445 120 452 150 L 452 185 Q 445 205 420 205 Z"
               fill="#BFDBFE"
               opacity="0.9"
             />
 
-            {/* REDROUTE Branding */}
+            {/* Large REDROUTE Branding */}
             <rect
-              x="80"
-              y="140"
-              width="200"
-              height="25"
-              rx="4"
+              x="100"
+              y="155"
+              width="240"
+              height="35"
+              rx="6"
               fill="#FFFFFF"
             />
             <text
-              x="180"
-              y="158"
+              x="220"
+              y="180"
               textAnchor="middle"
               fill="#DC2626"
-              fontSize="20"
+              fontSize="28"
               fontFamily="Arial, sans-serif"
               fontWeight="bold"
             >
               REDROUTE
             </text>
 
-            {/* Wheels */}
-            <circle cx="80" cy="210" r="30" fill="#1F2937" />
-            <circle cx="80" cy="210" r="24" fill="#374151" />
-            <circle cx="80" cy="210" r="16" fill="#6B7280" />
-            <circle cx="80" cy="210" r="8" fill="#9CA3AF" />
+            {/* Realistic Wheels */}
+            <circle cx="90" cy="240" r="35" fill="#1F2937" />
+            <circle cx="90" cy="240" r="28" fill="#374151" />
+            <circle cx="90" cy="240" r="20" fill="#6B7280" />
+            <circle cx="90" cy="240" r="12" fill="#9CA3AF" />
+            <circle cx="90" cy="240" r="6" fill="#D1D5DB" />
 
-            <circle cx="280" cy="210" r="30" fill="#1F2937" />
-            <circle cx="280" cy="210" r="24" fill="#374151" />
-            <circle cx="280" cy="210" r="16" fill="#6B7280" />
-            <circle cx="280" cy="210" r="8" fill="#9CA3AF" />
+            <circle cx="350" cy="240" r="35" fill="#1F2937" />
+            <circle cx="350" cy="240" r="28" fill="#374151" />
+            <circle cx="350" cy="240" r="20" fill="#6B7280" />
+            <circle cx="350" cy="240" r="12" fill="#9CA3AF" />
+            <circle cx="350" cy="240" r="6" fill="#D1D5DB" />
 
             {/* Door */}
-            <rect x="30" y="140" width="25" height="55" rx="3" fill="#7C2D12" />
-            <rect x="33" y="165" width="4" height="15" rx="1" fill="#D1D5DB" />
+            <rect x="30" y="165" width="30" height="60" rx="4" fill="#7C2D12" />
+            <rect x="35" y="190" width="5" height="20" rx="2" fill="#D1D5DB" />
 
             {/* Side Details */}
-            <rect x="25" y="170" width="310" height="6" fill="#7C2D12" />
+            <rect x="25" y="200" width="390" height="8" fill="#7C2D12" />
+            <rect
+              x="30"
+              y="190"
+              width="380"
+              height="3"
+              fill="#FEF3C7"
+              opacity="0.8"
+            />
 
             {/* Headlights */}
-            <circle cx="375" cy="130" r="8" fill="#FEF3C7" />
-            <circle cx="375" cy="160" r="8" fill="#FEF3C7" />
+            <circle cx="455" cy="130" r="10" fill="#FEF3C7" />
+            <circle cx="455" cy="155" r="10" fill="#FEF3C7" />
+            <circle cx="455" cy="180" r="8" fill="#FCA5A5" />
 
             {/* Side Mirror */}
-            <ellipse cx="390" cy="125" rx="3" ry="8" fill="#374151" />
+            <ellipse cx="475" cy="135" rx="4" ry="10" fill="#374151" />
 
-            {/* Roof Details */}
-            <rect x="25" y="75" width="310" height="10" fill="#991B1B" />
+            {/* Roof and Details */}
+            <rect x="25" y="85" width="390" height="10" fill="#991B1B" />
+
+            {/* Air Vents */}
+            <rect
+              x="400"
+              y="160"
+              width="15"
+              height="25"
+              rx="2"
+              fill="#6B7280"
+            />
+            <rect x="402" y="162" width="11" height="3" fill="#374151" />
+            <rect x="402" y="167" width="11" height="3" fill="#374151" />
+            <rect x="402" y="172" width="11" height="3" fill="#374151" />
+            <rect x="402" y="177" width="11" height="3" fill="#374151" />
           </svg>
         </div>
 
         {/* 20% off Coupon Badge */}
         <div className="absolute top-8 right-8">
-          <div className="bg-white rounded-full p-4 shadow-lg">
+          <div className="bg-white rounded-full p-6 shadow-xl border-2 border-gray-200">
             <div className="text-center">
-              <div className="text-red-600 font-bold text-lg">20% off</div>
-              <div className="text-gray-600 text-sm">coupon code:</div>
-              <div className="text-red-600 font-bold">summer21</div>
+              <div className="text-red-600 font-bold text-xl">20% off</div>
+              <div className="text-gray-600 text-sm mt-1">coupon code:</div>
+              <div className="text-red-600 font-bold text-lg">summer21</div>
             </div>
           </div>
         </div>
 
         {/* Hero Text */}
-        <div className="absolute bottom-24 left-8 text-gray-800 max-w-lg">
-          <h1 className="text-4xl md:text-5xl font-bold mb-2 leading-tight drop-shadow-lg">
+        <div className="absolute bottom-16 left-8 text-white max-w-lg">
+          <h1 className="text-4xl md:text-5xl font-bold mb-2 leading-tight drop-shadow-2xl">
             Low cost travel in India by bus
           </h1>
         </div>
