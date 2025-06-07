@@ -180,102 +180,101 @@ const Index = () => {
             </svg>
           </div>
 
-          {/* Flat Design Bus - Exact Reference Style */}
-          <div className="absolute bottom-6 right-24">
-            <svg className="w-48 h-26" viewBox="0 0 240 130">
+          {/* Reference Style Bus */}
+          <div className="absolute bottom-6 right-20">
+            <svg className="w-52 h-28" viewBox="0 0 260 140">
               {/* Bus Shadow */}
               <ellipse
-                cx="120"
-                cy="115"
-                rx="95"
+                cx="130"
+                cy="125"
+                rx="100"
                 ry="8"
-                fill="rgba(0,0,0,0.2)"
+                fill="rgba(0,0,0,0.25)"
               />
 
-              {/* Main Bus Body - Pink/Coral */}
+              {/* Main Bus Body - Coral Pink */}
               <rect
-                x="10"
-                y="40"
-                width="170"
-                height="55"
-                rx="8"
-                fill="#F472B6"
+                x="15"
+                y="45"
+                width="180"
+                height="60"
+                rx="6"
+                fill="#FB7185"
               />
 
               {/* Bus Top Section - Dark Navy */}
               <rect
-                x="10"
-                y="25"
-                width="170"
-                height="25"
-                rx="8"
-                fill="#1E293B"
-              />
-              <rect x="10" y="40" width="170" height="8" fill="#1E293B" />
-
-              {/* Front Section */}
-              <path
-                d="M 180 25 Q 200 30 205 50 L 205 85 Q 200 95 180 95 Z"
-                fill="#F472B6"
-              />
-              <path
-                d="M 180 25 Q 195 30 200 45 L 200 65 Q 195 75 180 75 Z"
-                fill="#1E293B"
-              />
-
-              {/* Large Window Strip */}
-              <rect
-                x="20"
+                x="15"
                 y="30"
-                width="150"
+                width="180"
+                height="25"
+                rx="6"
+                fill="#0F172A"
+              />
+              <rect x="15" y="45" width="180" height="10" fill="#0F172A" />
+
+              {/* Front Nose */}
+              <path
+                d="M 195 30 Q 218 35 225 55 L 225 90 Q 218 105 195 105 Z"
+                fill="#FB7185"
+              />
+              <path
+                d="M 195 30 Q 212 35 218 50 L 218 75 Q 212 85 195 85 Z"
+                fill="#0F172A"
+              />
+
+              {/* Large Tinted Window Strip */}
+              <rect
+                x="25"
+                y="35"
+                width="160"
                 height="15"
-                rx="3"
+                rx="2"
                 fill="#1E3A8A"
-                opacity="0.8"
               />
 
               {/* Front Windshield */}
               <path
-                d="M 180 30 Q 190 32 195 45 L 195 65 Q 190 75 180 75 Z"
+                d="M 195 35 Q 208 37 213 50 L 213 75 Q 208 83 195 83 Z"
                 fill="#1E3A8A"
-                opacity="0.8"
               />
 
-              {/* Simple Flat Wheels */}
-              <circle cx="45" cy="105" r="18" fill="#374151" />
-              <circle cx="45" cy="105" r="12" fill="#4B5563" />
+              {/* Wheels */}
+              <circle cx="50" cy="115" r="20" fill="#1F2937" />
+              <circle cx="50" cy="115" r="14" fill="#374151" />
 
-              <circle cx="155" cy="105" r="18" fill="#374151" />
-              <circle cx="155" cy="105" r="12" fill="#4B5563" />
+              <circle cx="170" cy="115" r="20" fill="#1F2937" />
+              <circle cx="170" cy="115" r="14" fill="#374151" />
 
               {/* Door */}
               <rect
-                x="15"
-                y="60"
-                width="15"
-                height="30"
+                x="18"
+                y="65"
+                width="18"
+                height="35"
                 rx="2"
-                fill="#1E293B"
+                fill="#0F172A"
               />
 
-              {/* Side Details */}
-              <rect x="10" y="68" width="170" height="3" fill="#EC4899" />
+              {/* Side Accent Line */}
+              <rect x="15" y="75" width="180" height="4" fill="#E11D48" />
 
-              {/* Simple Headlight */}
-              <circle cx="200" cy="55" r="6" fill="#FDE047" />
-
-              {/* Minimal Details */}
+              {/* Front Details */}
+              <circle cx="218" cy="60" r="7" fill="#FEF08A" />
               <rect
-                x="185"
-                y="45"
-                width="8"
-                height="20"
+                x="210"
+                y="50"
+                width="10"
+                height="25"
                 rx="2"
                 fill="#DC2626"
               />
 
               {/* Side Mirror */}
-              <rect x="205" y="48" width="3" height="6" rx="1" fill="#374151" />
+              <ellipse cx="227" cy="55" rx="2" ry="4" fill="#374151" />
+
+              {/* Number/Route Display */}
+              <rect x="30" y="25" width="40" height="8" rx="2" fill="#FEF08A" />
             </svg>
           </div>
           {/* Hero Text */}
