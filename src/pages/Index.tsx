@@ -19,11 +19,12 @@ import {
   Ticket,
   Train,
   ArrowRight,
+  Bus,
 } from "lucide-react";
 
 const Index = () => {
-  const [fromCity, setFromCity] = useState("New Delhi");
-  const [toCity, setToCity] = useState("New York");
+  const [fromCity, setFromCity] = useState("");
+  const [toCity, setToCity] = useState("");
   const [selectedDate, setSelectedDate] = useState("");
   const [freeCancellation, setFreeCancellation] = useState(true);
 
@@ -39,7 +40,6 @@ const Index = () => {
       return;
     }
 
-    // Here you would typically navigate to search results
     console.log(
       "Searching buses from",
       fromCity,
@@ -51,7 +51,6 @@ const Index = () => {
     alert(`Searching buses from ${fromCity} to ${toCity} on ${selectedDate}`);
   };
 
-  // Get today's date in YYYY-MM-DD format
   const today = new Date().toISOString().split("T")[0];
 
   const featureCards = [
@@ -96,19 +95,20 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
+    <div className="min-h-screen bg-white">
       {/* Header */}
       <header className="bg-white shadow-sm border-b">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-8">
           <div className="flex justify-between items-center h-16">
-            {/* Logo */}
             <div className="flex items-center space-x-2">
               <div className="text-2xl font-bold text-red-600">redRoute</div>
               <div className="text-sm text-gray-500">-- across the limit</div>
             </div>
 
-            {/* Account Button */}
-            <Button variant="outline" className="flex items-center space-x-2">
+            <Button
+              variant="outline"
+              className="flex items-center space-x-2 rounded-lg"
+            >
               <User className="h-4 w-4" />
               <span>Account</span>
             </Button>
@@ -116,237 +116,285 @@ const Index = () => {
         </div>
       </header>
 
-      {/* Professional Hero Section */}
-      <div className="relative h-64 bg-gradient-to-r from-slate-800 via-blue-800 to-purple-600 overflow-hidden">
-        {/* Geometric Background Pattern */}
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-0 left-0 w-64 h-64 bg-white transform rotate-45 -translate-x-32 -translate-y-32"></div>
-          <div className="absolute top-0 right-0 w-48 h-48 bg-white transform rotate-12 translate-x-24 -translate-y-24"></div>
-        </div>
+      {/* Hero Section with Integrated Booking Form */}
+      <div className="relative">
+        {/* Background Landscape */}
+        <div className="relative h-80 bg-gradient-to-r from-slate-700 via-blue-700 to-purple-600 overflow-hidden">
+          {/* Hills Background */}
+          <div className="absolute bottom-0 left-0 right-0">
+            {/* Back Hills */}
+            <svg
+              className="absolute bottom-0 w-full h-48"
+              viewBox="0 0 1200 200"
+              preserveAspectRatio="none"
+            >
+              <path
+                d="M0,200 L0,80 Q300,30 600,60 T1200,70 L1200,200 Z"
+                fill="rgba(34, 197, 94, 0.3)"
+              />
+            </svg>
 
-        {/* Landscape Elements */}
-        <div className="absolute bottom-0 left-0 right-0">
-          {/* Hills */}
-          <svg
-            className="absolute bottom-0 w-full h-32"
-            viewBox="0 0 1200 120"
-            preserveAspectRatio="none"
-          >
-            <path
-              d="M0,120 L0,60 Q300,20 600,40 T1200,50 L1200,120 Z"
-              fill="rgba(34, 197, 94, 0.4)"
-            />
-          </svg>
+            {/* Front Hills */}
+            <svg
+              className="absolute bottom-0 w-full h-32"
+              viewBox="0 0 1200 120"
+              preserveAspectRatio="none"
+            >
+              <path
+                d="M0,120 L0,50 Q400,20 800,40 T1200,35 L1200,120 Z"
+                fill="rgba(34, 197, 94, 0.5)"
+              />
+            </svg>
 
-          <svg
-            className="absolute bottom-0 w-full h-20"
-            viewBox="0 0 1200 80"
-            preserveAspectRatio="none"
-          >
-            <path
-              d="M0,80 L0,40 Q400,10 800,30 T1200,25 L1200,80 Z"
-              fill="rgba(34, 197, 94, 0.6)"
-            />
-          </svg>
+            {/* Road */}
+            <div className="absolute bottom-0 left-0 right-0 h-6 bg-gray-800"></div>
+            <div className="absolute bottom-2 left-0 right-0 h-0.5 bg-yellow-300"></div>
+          </div>
 
-          {/* Road */}
-          <div className="absolute bottom-0 left-0 right-0 h-8 bg-gray-800"></div>
-          <div className="absolute bottom-3 left-0 right-0 h-0.5 bg-yellow-300 opacity-80"></div>
-        </div>
+          {/* Trees */}
+          <div className="absolute bottom-6 left-32">
+            <svg className="w-8 h-12" viewBox="0 0 40 60">
+              <rect x="18" y="45" width="4" height="15" fill="#4A5568" />
+              <circle cx="20" cy="35" r="12" fill="#22C55E" />
+            </svg>
+          </div>
 
-        {/* Static Trees */}
-        <div className="absolute bottom-8 left-20">
-          <svg className="w-6 h-10" viewBox="0 0 30 50">
-            <rect x="13" y="35" width="4" height="15" fill="#4A5568" />
-            <circle cx="15" cy="25" r="10" fill="#22C55E" />
-          </svg>
-        </div>
+          <div className="absolute bottom-6 left-60">
+            <svg className="w-6 h-10" viewBox="0 0 30 50">
+              <rect x="13" y="35" width="4" height="15" fill="#4A5568" />
+              <circle cx="15" cy="25" r="10" fill="#16A34A" />
+            </svg>
+          </div>
 
-        <div className="absolute bottom-8 left-40">
-          <svg className="w-5 h-8" viewBox="0 0 25 40">
-            <rect x="11" y="28" width="3" height="12" fill="#4A5568" />
-            <circle cx="12.5" cy="20" r="8" fill="#16A34A" />
-          </svg>
-        </div>
+          <div className="absolute bottom-6 right-48">
+            <svg className="w-8 h-12" viewBox="0 0 40 60">
+              <rect x="18" y="45" width="4" height="15" fill="#4A5568" />
+              <circle cx="20" cy="35" r="12" fill="#22C55E" />
+            </svg>
+          </div>
 
-        <div className="absolute bottom-8 right-40">
-          <svg className="w-6 h-10" viewBox="0 0 30 50">
-            <rect x="13" y="35" width="4" height="15" fill="#4A5568" />
-            <circle cx="15" cy="25" r="10" fill="#22C55E" />
-          </svg>
-        </div>
+          <div className="absolute bottom-6 right-72">
+            <svg className="w-7 h-11" viewBox="0 0 35 55">
+              <rect x="15" y="40" width="4" height="15" fill="#4A5568" />
+              <circle cx="17" cy="30" r="11" fill="#16A34A" />
+            </svg>
+          </div>
 
-        {/* Static Professional Bus */}
-        <div className="absolute bottom-8 right-20">
-          <svg className="w-20 h-12" viewBox="0 0 120 70">
-            {/* Bus Shadow */}
-            <ellipse cx="60" cy="65" rx="50" ry="3" fill="rgba(0,0,0,0.2)" />
+          {/* Bus positioned like in reference */}
+          <div className="absolute bottom-6 right-32">
+            <svg className="w-24 h-14" viewBox="0 0 140 80">
+              {/* Bus Shadow */}
+              <ellipse cx="70" cy="75" rx="60" ry="4" fill="rgba(0,0,0,0.3)" />
 
-            {/* Bus Body */}
-            <rect x="10" y="20" width="90" height="35" rx="8" fill="#EC4899" />
-            <rect x="15" y="25" width="80" height="25" rx="4" fill="#BE185D" />
+              {/* Bus Body */}
+              <rect
+                x="10"
+                y="25"
+                width="110"
+                height="40"
+                rx="8"
+                fill="#EC4899"
+              />
+              <rect
+                x="15"
+                y="30"
+                width="100"
+                height="30"
+                rx="4"
+                fill="#BE185D"
+              />
 
-            {/* Windows */}
-            <rect x="20" y="28" width="14" height="10" rx="2" fill="#DBEAFE" />
-            <rect x="36" y="28" width="14" height="10" rx="2" fill="#DBEAFE" />
-            <rect x="52" y="28" width="14" height="10" rx="2" fill="#DBEAFE" />
-            <rect x="68" y="28" width="14" height="10" rx="2" fill="#DBEAFE" />
+              {/* Windows */}
+              <rect
+                x="25"
+                y="35"
+                width="16"
+                height="12"
+                rx="2"
+                fill="#DBEAFE"
+              />
+              <rect
+                x="45"
+                y="35"
+                width="16"
+                height="12"
+                rx="2"
+                fill="#DBEAFE"
+              />
+              <rect
+                x="65"
+                y="35"
+                width="16"
+                height="12"
+                rx="2"
+                fill="#DBEAFE"
+              />
+              <rect
+                x="85"
+                y="35"
+                width="16"
+                height="12"
+                rx="2"
+                fill="#DBEAFE"
+              />
 
-            {/* Front Windshield */}
-            <rect x="85" y="28" width="10" height="18" rx="2" fill="#BFDBFE" />
+              {/* Front */}
+              <rect
+                x="105"
+                y="32"
+                width="12"
+                height="25"
+                rx="3"
+                fill="#7C2D12"
+              />
+              <rect x="110" y="35" width="8" height="8" rx="1" fill="#FEF3C7" />
+              <rect x="110" y="45" width="8" height="8" rx="1" fill="#FCA5A5" />
 
-            {/* Wheels */}
-            <circle cx="25" cy="52" r="10" fill="#374151" />
-            <circle cx="80" cy="52" r="10" fill="#374151" />
-            <circle cx="25" cy="52" r="6" fill="#6B7280" />
-            <circle cx="80" cy="52" r="6" fill="#6B7280" />
+              {/* Wheels */}
+              <circle cx="30" cy="62" r="12" fill="#374151" />
+              <circle cx="100" cy="62" r="12" fill="#374151" />
+              <circle cx="30" cy="62" r="7" fill="#6B7280" />
+              <circle cx="100" cy="62" r="7" fill="#6B7280" />
 
-            {/* Headlights */}
-            <circle cx="98" cy="35" r="3" fill="#FEF3C7" />
-            <circle cx="98" cy="45" r="3" fill="#FCA5A5" />
+              {/* Door */}
+              <rect
+                x="20"
+                y="45"
+                width="10"
+                height="15"
+                rx="1"
+                fill="#7C2D12"
+              />
+            </svg>
+          </div>
 
-            {/* Door */}
-            <rect x="16" y="40" width="8" height="12" rx="1" fill="#7C2D12" />
-          </svg>
-        </div>
-
-        {/* Professional Hero Text */}
-        <div className="absolute inset-0 flex items-center justify-start">
-          <div className="max-w-7xl mx-auto px-8 w-full">
-            <div className="text-left text-white max-w-lg">
-              <h1 className="text-4xl md:text-5xl font-bold mb-3 leading-tight">
-                India's No.1 online
-              </h1>
-              <h2 className="text-3xl md:text-4xl font-bold text-blue-200 leading-tight">
-                bus ticket booking site
-              </h2>
-              <p className="text-lg text-blue-100 mt-4 opacity-90">
-                Book your journey with confidence and comfort
-              </p>
-            </div>
+          {/* Hero Text */}
+          <div className="absolute top-12 left-8 text-white max-w-lg">
+            <h1 className="text-4xl md:text-5xl font-bold mb-2 leading-tight">
+              India's No.1 online
+            </h1>
+            <h2 className="text-4xl md:text-5xl font-bold leading-tight">
+              bus ticket booking site
+            </h2>
           </div>
         </div>
 
-        {/* Subtle Clouds */}
-        <div className="absolute top-6 right-32">
-          <svg className="w-16 h-8 opacity-30" viewBox="0 0 80 40">
-            <circle cx="20" cy="20" r="12" fill="white" />
-            <circle cx="35" cy="18" r="15" fill="white" />
-            <circle cx="50" cy="20" r="12" fill="white" />
-          </svg>
+        {/* Integrated Booking Form */}
+        <div className="relative z-10 -mt-20">
+          <div className="max-w-6xl mx-auto px-8">
+            <Card className="bg-white shadow-2xl rounded-3xl overflow-hidden">
+              <CardContent className="p-6">
+                <div className="grid grid-cols-1 lg:grid-cols-7 gap-4 items-end">
+                  {/* From */}
+                  <div className="lg:col-span-2 space-y-2">
+                    <Label className="text-sm font-medium text-gray-600">
+                      From
+                    </Label>
+                    <div className="relative">
+                      <Bus className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400" />
+                      <Input
+                        value={fromCity}
+                        onChange={(e) => setFromCity(e.target.value)}
+                        className="pl-10 h-14 text-lg rounded-2xl border-gray-200"
+                        placeholder="From"
+                      />
+                    </div>
+                  </div>
+
+                  {/* To */}
+                  <div className="lg:col-span-2 space-y-2">
+                    <Label className="text-sm font-medium text-gray-600">
+                      To
+                    </Label>
+                    <div className="relative">
+                      <Bus className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400" />
+                      <Input
+                        value={toCity}
+                        onChange={(e) => setToCity(e.target.value)}
+                        className="pl-10 h-14 text-lg rounded-2xl border-gray-200"
+                        placeholder="To"
+                      />
+                    </div>
+                  </div>
+
+                  {/* Date */}
+                  <div className="lg:col-span-2 space-y-2">
+                    <Label className="text-sm font-medium text-gray-600">
+                      Date of Journey
+                    </Label>
+                    <div className="relative">
+                      <Calendar className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400" />
+                      <Input
+                        type="date"
+                        value={selectedDate}
+                        onChange={(e) => setSelectedDate(e.target.value)}
+                        className="pl-10 h-14 text-lg rounded-2xl border-gray-200"
+                        min={today}
+                      />
+                    </div>
+
+                    {/* Today/Tomorrow buttons */}
+                    <div className="flex gap-2 mt-2">
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        className="rounded-full bg-red-50 text-red-600 border-red-200"
+                        onClick={() => setSelectedDate(today)}
+                      >
+                        Today
+                      </Button>
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        className="rounded-full"
+                        onClick={() => {
+                          const tomorrow = new Date();
+                          tomorrow.setDate(tomorrow.getDate() + 1);
+                          setSelectedDate(tomorrow.toISOString().split("T")[0]);
+                        }}
+                      >
+                        Tomorrow
+                      </Button>
+                    </div>
+                  </div>
+
+                  {/* Search Button */}
+                  <div className="lg:col-span-1">
+                    <Button
+                      onClick={handleSearch}
+                      className="w-full h-14 text-lg bg-red-600 hover:bg-red-700 rounded-2xl"
+                    >
+                      <Search className="h-5 w-5 mr-2" />
+                      Search
+                    </Button>
+                  </div>
+                </div>
+
+                {/* Booking for women toggle */}
+                <div className="flex items-center justify-end mt-4">
+                  <div className="flex items-center space-x-3">
+                    <div className="w-8 h-8 bg-pink-100 rounded-full flex items-center justify-center">
+                      <User className="h-5 w-5 text-pink-600" />
+                    </div>
+                    <div>
+                      <div className="text-sm font-medium">
+                        Booking for women
+                      </div>
+                      <div className="text-xs text-blue-600 cursor-pointer">
+                        Know more
+                      </div>
+                    </div>
+                    <Switch />
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </div>
-      {/* Main Content */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        {/* Hero Section */}
-        <div className="text-center mb-8">
-          <h1 className="text-4xl font-bold text-gray-900 mb-2">REDROUTE</h1>
-          <p className="text-lg text-gray-600">
-            Bookings open for summer holidays
-          </p>
-        </div>
-        {/* Search Form */}
-        <Card className="mb-8 p-6 shadow-lg rounded-3xl">
-          <CardContent className="p-0">
-            <div className="grid grid-cols-1 lg:grid-cols-5 gap-4 items-end">
-              {/* From */}
-              <div className="space-y-2">
-                <Label htmlFor="from" className="text-sm font-medium">
-                  From
-                </Label>
-                <div className="relative">
-                  <MapPin className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400" />
-                  <Input
-                    id="from"
-                    value={fromCity}
-                    onChange={(e) => setFromCity(e.target.value)}
-                    className="pl-10 h-12 text-lg rounded-2xl"
-                    placeholder="Enter city"
-                  />
-                </div>
-              </div>
 
-              {/* Swap Button */}
-              <div className="flex justify-center lg:justify-start">
-                <Button
-                  variant="outline"
-                  size="sm"
-                  onClick={swapCities}
-                  className="rounded-full h-10 w-10 p-0"
-                >
-                  <ArrowLeftRight className="h-4 w-4" />
-                </Button>
-              </div>
-
-              {/* To */}
-              <div className="space-y-2">
-                <Label htmlFor="to" className="text-sm font-medium">
-                  To
-                </Label>
-                <div className="relative">
-                  <MapPin className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400" />
-                  <Input
-                    id="to"
-                    value={toCity}
-                    onChange={(e) => setToCity(e.target.value)}
-                    className="pl-10 h-12 text-lg rounded-2xl"
-                    placeholder="Enter city"
-                  />
-                </div>
-              </div>
-
-              {/* Date */}
-              <div className="space-y-2">
-                <Label htmlFor="date" className="text-sm font-medium">
-                  Date of Journey
-                </Label>
-                <div className="relative">
-                  <Calendar className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400" />
-                  <Input
-                    id="date"
-                    type="date"
-                    value={selectedDate}
-                    onChange={(e) => setSelectedDate(e.target.value)}
-                    className="pl-10 h-12 text-lg rounded-2xl"
-                    placeholder="Select date"
-                    min={today}
-                  />
-                </div>
-              </div>
-
-              {/* Search Button */}
-              <div className="lg:col-span-1">
-                <Button
-                  onClick={handleSearch}
-                  className="w-full h-12 text-lg bg-red-600 hover:bg-red-700 rounded-2xl"
-                >
-                  <Search className="h-5 w-5 mr-2" />
-                  Search bus
-                </Button>
-              </div>
-            </div>
-
-            {/* Free Cancellation */}
-            <div className="flex items-center justify-between mt-6 p-4 bg-green-50 rounded-2xl">
-              <div>
-                <div className="flex items-center space-x-2">
-                  <Switch
-                    id="free-cancellation"
-                    checked={freeCancellation}
-                    onCheckedChange={setFreeCancellation}
-                  />
-                  <Label htmlFor="free-cancellation" className="font-medium">
-                    Free Cancellation
-                  </Label>
-                </div>
-                <p className="text-sm text-gray-600 mt-1">
-                  ₹0 cancellation fee
-                </p>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
-
+      {/* Rest of content */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {/* Feature Cards */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
           {featureCards.map((feature, index) => (
