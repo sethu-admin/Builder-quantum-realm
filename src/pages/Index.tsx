@@ -180,94 +180,261 @@ const Index = () => {
             </svg>
           </div>
 
-          {/* Bus positioned like in reference */}
-          <div className="absolute bottom-6 right-32">
-            <svg className="w-24 h-14" viewBox="0 0 140 80">
+          {/* Large Realistic Bus positioned like in reference */}
+          <div className="absolute bottom-6 right-20">
+            <svg className="w-40 h-24" viewBox="0 0 200 120">
               {/* Bus Shadow */}
-              <ellipse cx="70" cy="75" rx="60" ry="4" fill="rgba(0,0,0,0.3)" />
+              <ellipse
+                cx="100"
+                cy="110"
+                rx="90"
+                ry="6"
+                fill="rgba(0,0,0,0.4)"
+              />
 
-              {/* Bus Body */}
+              {/* Bus Body Main Structure */}
               <rect
-                x="10"
-                y="25"
-                width="110"
-                height="40"
-                rx="8"
+                x="5"
+                y="30"
+                width="160"
+                height="60"
+                rx="12"
                 fill="#EC4899"
               />
               <rect
-                x="15"
-                y="30"
-                width="100"
-                height="30"
-                rx="4"
+                x="10"
+                y="35"
+                width="150"
+                height="50"
+                rx="8"
                 fill="#BE185D"
               />
 
-              {/* Windows */}
+              {/* Passenger Windows */}
               <rect
                 x="25"
-                y="35"
-                width="16"
-                height="12"
-                rx="2"
+                y="42"
+                width="20"
+                height="16"
+                rx="3"
                 fill="#DBEAFE"
               />
               <rect
-                x="45"
-                y="35"
-                width="16"
-                height="12"
-                rx="2"
+                x="50"
+                y="42"
+                width="20"
+                height="16"
+                rx="3"
                 fill="#DBEAFE"
               />
               <rect
-                x="65"
-                y="35"
-                width="16"
-                height="12"
-                rx="2"
+                x="75"
+                y="42"
+                width="20"
+                height="16"
+                rx="3"
                 fill="#DBEAFE"
               />
               <rect
-                x="85"
-                y="35"
-                width="16"
-                height="12"
-                rx="2"
+                x="100"
+                y="42"
+                width="20"
+                height="16"
+                rx="3"
+                fill="#DBEAFE"
+              />
+              <rect
+                x="125"
+                y="42"
+                width="20"
+                height="16"
+                rx="3"
                 fill="#DBEAFE"
               />
 
-              {/* Front */}
+              {/* Front Windshield */}
               <rect
-                x="105"
-                y="32"
+                x="150"
+                y="38"
+                width="18"
+                height="35"
+                rx="4"
+                fill="#BFDBFE"
+              />
+
+              {/* Side Details */}
+              <rect
+                x="10"
+                y="70"
+                width="150"
+                height="8"
+                rx="2"
+                fill="#9D174D"
+              />
+              <rect x="15" y="62" width="140" height="3" fill="#F8FAFC" />
+
+              {/* Wheels - More detailed */}
+              <circle cx="35" cy="95" r="18" fill="#1F2937" />
+              <circle cx="35" cy="95" r="14" fill="#374151" />
+              <circle cx="35" cy="95" r="8" fill="#6B7280" />
+              <circle cx="35" cy="95" r="4" fill="#9CA3AF" />
+
+              <circle cx="130" cy="95" r="18" fill="#1F2937" />
+              <circle cx="130" cy="95" r="14" fill="#374151" />
+              <circle cx="130" cy="95" r="8" fill="#6B7280" />
+              <circle cx="130" cy="95" r="4" fill="#9CA3AF" />
+
+              {/* Wheel Rims */}
+              <circle
+                cx="35"
+                cy="95"
+                r="6"
+                fill="none"
+                stroke="#D1D5DB"
+                strokeWidth="1"
+              />
+              <circle
+                cx="130"
+                cy="95"
+                r="6"
+                fill="none"
+                stroke="#D1D5DB"
+                strokeWidth="1"
+              />
+
+              {/* Front Grille and Details */}
+              <rect
+                x="165"
+                y="45"
                 width="12"
-                height="25"
-                rx="3"
+                height="20"
+                rx="2"
                 fill="#7C2D12"
               />
-              <rect x="110" y="35" width="8" height="8" rx="1" fill="#FEF3C7" />
-              <rect x="110" y="45" width="8" height="8" rx="1" fill="#FCA5A5" />
+              <rect x="168" y="48" width="6" height="6" rx="1" fill="#FEF3C7" />
+              <rect x="168" y="57" width="6" height="6" rx="1" fill="#FCA5A5" />
 
-              {/* Wheels */}
-              <circle cx="30" cy="62" r="12" fill="#374151" />
-              <circle cx="100" cy="62" r="12" fill="#374151" />
-              <circle cx="30" cy="62" r="7" fill="#6B7280" />
-              <circle cx="100" cy="62" r="7" fill="#6B7280" />
+              {/* Side Mirror */}
+              <rect x="175" y="52" width="4" height="8" rx="2" fill="#374151" />
 
               {/* Door */}
               <rect
-                x="20"
-                y="45"
-                width="10"
-                height="15"
-                rx="1"
+                x="18"
+                y="62"
+                width="14"
+                height="25"
+                rx="2"
                 fill="#7C2D12"
               />
+              <rect x="20" y="75" width="3" height="8" rx="1" fill="#D1D5DB" />
+
+              {/* Window Frames */}
+              <rect
+                x="23"
+                y="40"
+                width="24"
+                height="20"
+                rx="3"
+                fill="none"
+                stroke="#1E293B"
+                strokeWidth="2"
+              />
+              <rect
+                x="48"
+                y="40"
+                width="24"
+                height="20"
+                rx="3"
+                fill="none"
+                stroke="#1E293B"
+                strokeWidth="2"
+              />
+              <rect
+                x="73"
+                y="40"
+                width="24"
+                height="20"
+                rx="3"
+                fill="none"
+                stroke="#1E293B"
+                strokeWidth="2"
+              />
+              <rect
+                x="98"
+                y="40"
+                width="24"
+                height="20"
+                rx="3"
+                fill="none"
+                stroke="#1E293B"
+                strokeWidth="2"
+              />
+              <rect
+                x="123"
+                y="40"
+                width="24"
+                height="20"
+                rx="3"
+                fill="none"
+                stroke="#1E293B"
+                strokeWidth="2"
+              />
+
+              {/* Front Number Display */}
+              <rect
+                x="152"
+                y="65"
+                width="14"
+                height="8"
+                rx="2"
+                fill="#1F2937"
+              />
+              <text
+                x="159"
+                y="71"
+                textAnchor="middle"
+                fill="#FFF"
+                fontSize="6"
+                fontFamily="Arial"
+              >
+                redRoute
+              </text>
+
+              {/* Side Luggage Compartment */}
+              <rect
+                x="15"
+                y="80"
+                width="135"
+                height="8"
+                rx="2"
+                fill="#7C2D12"
+              />
+              <rect x="25" y="82" width="25" height="4" rx="1" fill="#A16207" />
+              <rect x="60" y="82" width="25" height="4" rx="1" fill="#A16207" />
+              <rect x="95" y="82" width="25" height="4" rx="1" fill="#A16207" />
+              <rect
+                x="130"
+                y="82"
+                width="15"
+                height="4"
+                rx="1"
+                fill="#A16207"
+              />
+
+              {/* Destination Display */}
+              <rect x="40" y="25" width="80" height="8" rx="2" fill="#1F2937" />
+              <text
+                x="80"
+                y="30"
+                textAnchor="middle"
+                fill="#22C55E"
+                fontSize="5"
+                fontFamily="Arial"
+              >
+                New Delhi → Mumbai
+              </text>
             </svg>
           </div>
-
           {/* Hero Text */}
           <div className="absolute top-12 left-8 text-white max-w-lg">
             <h1 className="text-4xl md:text-5xl font-bold mb-2 leading-tight">
