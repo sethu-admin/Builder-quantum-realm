@@ -104,124 +104,512 @@ const Booking = () => {
         </div>
       </header>
 
-      {/* Hero Section with Landscape */}
-      <div className="relative h-96 bg-gradient-to-r from-slate-700 via-blue-700 to-purple-600 overflow-hidden">
-        {/* Hills Background */}
+      {/* Hero Section with Tokyo Night City */}
+      <div className="relative h-96 bg-gradient-to-b from-indigo-900 via-purple-900 to-slate-900 overflow-hidden">
+        {/* Night Sky with Stars */}
+        <div className="absolute inset-0">
+          <div className="absolute top-8 left-20 w-1 h-1 bg-white rounded-full animate-pulse"></div>
+          <div className="absolute top-12 left-40 w-1 h-1 bg-white rounded-full opacity-80"></div>
+          <div className="absolute top-6 right-32 w-1 h-1 bg-white rounded-full animate-pulse"></div>
+          <div className="absolute top-16 right-60 w-1 h-1 bg-white rounded-full opacity-60"></div>
+          <div className="absolute top-10 left-80 w-1 h-1 bg-white rounded-full"></div>
+          <div className="absolute top-20 right-20 w-1 h-1 bg-white rounded-full animate-pulse"></div>
+        </div>
+
+        {/* Tokyo City Skyline */}
         <div className="absolute bottom-0 left-0 right-0">
-          {/* Back Hills */}
           <svg
-            className="absolute bottom-0 w-full h-48"
-            viewBox="0 0 1200 200"
+            className="w-full h-64"
+            viewBox="0 0 1200 250"
             preserveAspectRatio="none"
           >
-            <path
-              d="M0,200 L0,80 Q300,30 600,60 T1200,70 L1200,200 Z"
-              fill="rgba(34, 197, 94, 0.3)"
+            {/* Background Buildings */}
+            <rect x="0" y="180" width="80" height="70" fill="#1E293B" />
+            <rect x="90" y="160" width="60" height="90" fill="#334155" />
+            <rect x="160" y="140" width="70" height="110" fill="#475569" />
+            <rect x="240" y="120" width="50" height="130" fill="#1E293B" />
+            <rect x="300" y="100" width="80" height="150" fill="#334155" />
+            <rect x="390" y="80" width="60" height="170" fill="#475569" />
+            <rect x="460" y="60" width="90" height="190" fill="#1E293B" />
+            <rect x="560" y="40" width="70" height="210" fill="#334155" />
+            <rect x="640" y="90" width="80" height="160" fill="#475569" />
+            <rect x="730" y="110" width="60" height="140" fill="#1E293B" />
+            <rect x="800" y="130" width="70" height="120" fill="#334155" />
+            <rect x="880" y="150" width="50" height="100" fill="#475569" />
+            <rect x="940" y="170" width="80" height="80" fill="#1E293B" />
+            <rect x="1030" y="160" width="60" height="90" fill="#334155" />
+            <rect x="1100" y="180" width="100" height="70" fill="#475569" />
+
+            {/* Building Windows - Glowing */}
+            <rect
+              x="10"
+              y="190"
+              width="8"
+              height="6"
+              fill="#FDE047"
+              opacity="0.9"
+            />
+            <rect
+              x="25"
+              y="195"
+              width="8"
+              height="6"
+              fill="#60A5FA"
+              opacity="0.8"
+            />
+            <rect
+              x="40"
+              y="200"
+              width="8"
+              height="6"
+              fill="#FDE047"
+              opacity="0.7"
+            />
+            <rect
+              x="55"
+              y="185"
+              width="8"
+              height="6"
+              fill="#34D399"
+              opacity="0.8"
+            />
+
+            <rect
+              x="100"
+              y="170"
+              width="6"
+              height="8"
+              fill="#F87171"
+              opacity="0.9"
+            />
+            <rect
+              x="115"
+              y="180"
+              width="6"
+              height="8"
+              fill="#FDE047"
+              opacity="0.8"
+            />
+            <rect
+              x="130"
+              y="175"
+              width="6"
+              height="8"
+              fill="#60A5FA"
+              opacity="0.7"
+            />
+
+            <rect
+              x="170"
+              y="150"
+              width="8"
+              height="10"
+              fill="#A78BFA"
+              opacity="0.9"
+            />
+            <rect
+              x="185"
+              y="160"
+              width="8"
+              height="10"
+              fill="#FDE047"
+              opacity="0.8"
+            />
+            <rect
+              x="200"
+              y="155"
+              width="8"
+              height="10"
+              fill="#34D399"
+              opacity="0.7"
+            />
+            <rect
+              x="215"
+              y="165"
+              width="8"
+              height="10"
+              fill="#F87171"
+              opacity="0.8"
+            />
+
+            <rect
+              x="250"
+              y="130"
+              width="6"
+              height="12"
+              fill="#60A5FA"
+              opacity="0.9"
+            />
+            <rect
+              x="265"
+              y="140"
+              width="6"
+              height="12"
+              fill="#FDE047"
+              opacity="0.8"
+            />
+            <rect
+              x="280"
+              y="135"
+              width="6"
+              height="12"
+              fill="#A78BFA"
+              opacity="0.7"
+            />
+
+            <rect
+              x="310"
+              y="110"
+              width="10"
+              height="14"
+              fill="#34D399"
+              opacity="0.9"
+            />
+            <rect
+              x="330"
+              y="120"
+              width="10"
+              height="14"
+              fill="#F87171"
+              opacity="0.8"
+            />
+            <rect
+              x="350"
+              y="115"
+              width="10"
+              height="14"
+              fill="#FDE047"
+              opacity="0.7"
+            />
+            <rect
+              x="370"
+              y="125"
+              width="10"
+              height="14"
+              fill="#60A5FA"
+              opacity="0.8"
+            />
+
+            <rect
+              x="400"
+              y="90"
+              width="8"
+              height="16"
+              fill="#A78BFA"
+              opacity="0.9"
+            />
+            <rect
+              x="420"
+              y="100"
+              width="8"
+              height="16"
+              fill="#34D399"
+              opacity="0.8"
+            />
+            <rect
+              x="440"
+              y="95"
+              width="8"
+              height="16"
+              fill="#FDE047"
+              opacity="0.7"
+            />
+
+            <rect
+              x="470"
+              y="70"
+              width="12"
+              height="18"
+              fill="#F87171"
+              opacity="0.9"
+            />
+            <rect
+              x="490"
+              y="80"
+              width="12"
+              height="18"
+              fill="#60A5FA"
+              opacity="0.8"
+            />
+            <rect
+              x="510"
+              y="75"
+              width="12"
+              height="18"
+              fill="#A78BFA"
+              opacity="0.7"
+            />
+            <rect
+              x="530"
+              y="85"
+              width="12"
+              height="18"
+              fill="#34D399"
+              opacity="0.8"
+            />
+
+            <rect
+              x="570"
+              y="50"
+              width="10"
+              height="20"
+              fill="#FDE047"
+              opacity="0.9"
+            />
+            <rect
+              x="590"
+              y="60"
+              width="10"
+              height="20"
+              fill="#F87171"
+              opacity="0.8"
+            />
+            <rect
+              x="610"
+              y="55"
+              width="10"
+              height="20"
+              fill="#60A5FA"
+              opacity="0.7"
+            />
+
+            <rect
+              x="650"
+              y="100"
+              width="12"
+              height="16"
+              fill="#A78BFA"
+              opacity="0.9"
+            />
+            <rect
+              x="670"
+              y="110"
+              width="12"
+              height="16"
+              fill="#34D399"
+              opacity="0.8"
+            />
+            <rect
+              x="690"
+              y="105"
+              width="12"
+              height="16"
+              fill="#FDE047"
+              opacity="0.7"
+            />
+            <rect
+              x="710"
+              y="115"
+              width="12"
+              height="16"
+              fill="#F87171"
+              opacity="0.8"
+            />
+
+            <rect
+              x="740"
+              y="120"
+              width="8"
+              height="14"
+              fill="#60A5FA"
+              opacity="0.9"
+            />
+            <rect
+              x="760"
+              y="130"
+              width="8"
+              height="14"
+              fill="#A78BFA"
+              opacity="0.8"
+            />
+            <rect
+              x="780"
+              y="125"
+              width="8"
+              height="14"
+              fill="#34D399"
+              opacity="0.7"
+            />
+
+            <rect
+              x="810"
+              y="140"
+              width="10"
+              height="12"
+              fill="#FDE047"
+              opacity="0.9"
+            />
+            <rect
+              x="830"
+              y="150"
+              width="10"
+              height="12"
+              fill="#F87171"
+              opacity="0.8"
+            />
+            <rect
+              x="850"
+              y="145"
+              width="10"
+              height="12"
+              fill="#60A5FA"
+              opacity="0.7"
+            />
+
+            <rect
+              x="890"
+              y="160"
+              width="6"
+              height="10"
+              fill="#A78BFA"
+              opacity="0.9"
+            />
+            <rect
+              x="905"
+              y="170"
+              width="6"
+              height="10"
+              fill="#34D399"
+              opacity="0.8"
+            />
+            <rect
+              x="920"
+              y="165"
+              width="6"
+              height="10"
+              fill="#FDE047"
+              opacity="0.7"
+            />
+
+            <rect
+              x="950"
+              y="180"
+              width="8"
+              height="8"
+              fill="#F87171"
+              opacity="0.9"
+            />
+            <rect
+              x="970"
+              y="185"
+              width="8"
+              height="8"
+              fill="#60A5FA"
+              opacity="0.8"
+            />
+            <rect
+              x="990"
+              y="190"
+              width="8"
+              height="8"
+              fill="#A78BFA"
+              opacity="0.7"
+            />
+            <rect
+              x="1010"
+              y="175"
+              width="8"
+              height="8"
+              fill="#34D399"
+              opacity="0.8"
+            />
+
+            <rect
+              x="1040"
+              y="170"
+              width="6"
+              height="10"
+              fill="#FDE047"
+              opacity="0.9"
+            />
+            <rect
+              x="1055"
+              y="180"
+              width="6"
+              height="10"
+              fill="#F87171"
+              opacity="0.8"
+            />
+            <rect
+              x="1070"
+              y="175"
+              width="6"
+              height="10"
+              fill="#60A5FA"
+              opacity="0.7"
+            />
+
+            <rect
+              x="1110"
+              y="190"
+              width="10"
+              height="8"
+              fill="#A78BFA"
+              opacity="0.9"
+            />
+            <rect
+              x="1130"
+              y="195"
+              width="10"
+              height="8"
+              fill="#34D399"
+              opacity="0.8"
+            />
+            <rect
+              x="1150"
+              y="200"
+              width="10"
+              height="8"
+              fill="#FDE047"
+              opacity="0.7"
+            />
+            <rect
+              x="1170"
+              y="185"
+              width="10"
+              height="8"
+              fill="#F87171"
+              opacity="0.8"
+            />
+
+            {/* Neon Signs */}
+            <rect
+              x="300"
+              y="180"
+              width="60"
+              height="8"
+              fill="#FF1493"
+              opacity="0.8"
+            />
+            <rect
+              x="470"
+              y="140"
+              width="50"
+              height="6"
+              fill="#00FFFF"
+              opacity="0.9"
+            />
+            <rect
+              x="650"
+              y="160"
+              width="40"
+              height="6"
+              fill="#FFFF00"
+              opacity="0.8"
+            />
+            <rect
+              x="950"
+              y="200"
+              width="45"
+              height="6"
+              fill="#FF4500"
+              opacity="0.9"
             />
           </svg>
-
-          {/* Front Hills */}
-          <svg
-            className="absolute bottom-0 w-full h-32"
-            viewBox="0 0 1200 120"
-            preserveAspectRatio="none"
-          >
-            <path
-              d="M0,120 L0,50 Q400,20 800,40 T1200,35 L1200,120 Z"
-              fill="rgba(34, 197, 94, 0.5)"
-            />
-          </svg>
-
-          {/* Road */}
-          <div className="absolute bottom-0 left-0 right-0 h-6 bg-gray-800"></div>
-          <div className="absolute bottom-2 left-0 right-0 h-0.5 bg-yellow-300"></div>
         </div>
 
-        {/* Trees */}
-        <div className="absolute bottom-24 left-32">
-          <svg className="w-8 h-12" viewBox="0 0 40 60">
-            <rect x="18" y="45" width="4" height="15" fill="#4A5568" />
-            <circle cx="20" cy="35" r="12" fill="#22C55E" />
-          </svg>
-        </div>
-
-        <div className="absolute bottom-24 right-48">
-          <svg className="w-8 h-12" viewBox="0 0 40 60">
-            <rect x="18" y="45" width="4" height="15" fill="#4A5568" />
-            <circle cx="20" cy="35" r="12" fill="#22C55E" />
-          </svg>
-        </div>
-
-        <div className="absolute bottom-24 right-72">
-          <svg className="w-7 h-11" viewBox="0 0 35 55">
-            <rect x="15" y="40" width="4" height="15" fill="#4A5568" />
-            <circle cx="17" cy="30" r="11" fill="#16A34A" />
-          </svg>
-        </div>
-
-        {/* Flat Design Bus */}
-        <div className="absolute bottom-6 right-16">
-          <svg className="w-64 h-34" viewBox="0 0 320 170">
-            {/* Bus Shadow */}
-            <ellipse
-              cx="160"
-              cy="155"
-              rx="130"
-              ry="12"
-              fill="rgba(0,0,0,0.3)"
-            />
-
-            {/* Main Bus Body - Coral Pink */}
-            <rect x="25" y="60" width="210" height="75" rx="2" fill="#FF8A80" />
-
-            {/* Dark Top Section */}
-            <rect x="25" y="45" width="210" height="25" rx="2" fill="#0F172A" />
-            <rect x="25" y="60" width="210" height="10" fill="#0F172A" />
-
-            {/* Front Section */}
-            <path
-              d="M 235 45 Q 260 50 268 75 L 268 120 Q 260 135 235 135 Z"
-              fill="#FF8A80"
-            />
-            <path
-              d="M 235 45 Q 255 50 262 70 L 262 105 Q 255 115 235 115 Z"
-              fill="#0F172A"
-            />
-
-            {/* Long Tinted Windows */}
-            <rect x="35" y="50" width="190" height="16" rx="1" fill="#1E3A8A" />
-
-            {/* Front Windshield */}
-            <path
-              d="M 235 50 Q 250 52 257 70 L 257 105 Q 250 112 235 112 Z"
-              fill="#1E3A8A"
-            />
-
-            {/* Wheels */}
-            <circle cx="70" cy="145" r="25" fill="#1F2937" />
-            <circle cx="70" cy="145" r="19" fill="#374151" />
-            <circle cx="70" cy="145" r="11" fill="#9CA3AF" />
-
-            <circle cx="200" cy="145" r="25" fill="#1F2937" />
-            <circle cx="200" cy="145" r="19" fill="#374151" />
-            <circle cx="200" cy="145" r="11" fill="#9CA3AF" />
-
-            {/* Door */}
-            <rect x="30" y="80" width="24" height="50" rx="2" fill="#0F172A" />
-
-            {/* Red Accent Stripe */}
-            <rect x="25" y="95" width="210" height="6" fill="#DC2626" />
-
-            {/* Front Grille */}
-            <rect x="255" y="65" width="12" height="40" rx="1" fill="#B91C1C" />
-
-            {/* Headlight */}
-            <circle cx="262" cy="85" r="10" fill="#FDE047" />
-
-            {/* Side Mirror */}
-            <ellipse cx="270" cy="75" rx="2" ry="7" fill="#374151" />
-          </svg>
-        </div>
+        {/* Glowing City Lights Effect */}
+        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-purple-500/20 to-transparent"></div>
 
         {/* Hero Text */}
         <div className="absolute top-16 left-8 text-white max-w-lg">
@@ -233,7 +621,6 @@ const Booking = () => {
           </h2>
         </div>
       </div>
-
       {/* Booking Form - Overlapping */}
       <div className="relative z-10 -mt-20">
         <div className="max-w-6xl mx-auto px-8">
