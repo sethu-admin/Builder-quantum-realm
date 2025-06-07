@@ -104,149 +104,257 @@ const Booking = () => {
         </div>
       </header>
 
-      {/* Hero Section with Realistic Tokyo Night City */}
-      <div className="relative h-96 bg-gradient-to-b from-slate-800 via-indigo-900 to-purple-900 overflow-hidden">
-        {/* Realistic Night Sky */}
+      {/* Hero Section with Minimalist Night City */}
+      <div className="relative h-96 bg-gradient-to-b from-slate-900 via-indigo-950 to-slate-800 overflow-hidden">
+        {/* Night Sky with Stars */}
         <div className="absolute inset-0">
-          {/* Static Stars */}
-          <div className="absolute top-8 left-20 w-1 h-1 bg-white rounded-full opacity-90"></div>
-          <div className="absolute top-12 left-40 w-0.5 h-0.5 bg-white rounded-full opacity-70"></div>
-          <div className="absolute top-6 right-32 w-1 h-1 bg-white rounded-full opacity-85"></div>
-          <div className="absolute top-16 right-60 w-0.5 h-0.5 bg-white rounded-full opacity-60"></div>
-          <div className="absolute top-10 left-80 w-1 h-1 bg-white rounded-full opacity-80"></div>
-          <div className="absolute top-20 right-20 w-0.5 h-0.5 bg-white rounded-full opacity-75"></div>
-          <div className="absolute top-14 left-60 w-0.5 h-0.5 bg-white rounded-full opacity-65"></div>
-          <div className="absolute top-4 right-80 w-1 h-1 bg-white rounded-full opacity-85"></div>
-          <div className="absolute top-18 left-100 w-0.5 h-0.5 bg-white rounded-full opacity-70"></div>
+          {/* Scattered Stars */}
+          <div className="absolute top-8 left-12 w-1 h-1 bg-white rounded-full opacity-90"></div>
+          <div className="absolute top-16 left-32 w-0.5 h-0.5 bg-white rounded-full opacity-70"></div>
+          <div className="absolute top-12 left-48 w-1 h-1 bg-white rounded-full opacity-85"></div>
+          <div className="absolute top-20 left-64 w-0.5 h-0.5 bg-white rounded-full opacity-60"></div>
+          <div className="absolute top-6 left-80 w-1 h-1 bg-white rounded-full opacity-80"></div>
+          <div className="absolute top-14 left-96 w-0.5 h-0.5 bg-white rounded-full opacity-75"></div>
+
+          <div className="absolute top-10 right-12 w-0.5 h-0.5 bg-white rounded-full opacity-65"></div>
+          <div className="absolute top-18 right-28 w-1 h-1 bg-white rounded-full opacity-85"></div>
+          <div className="absolute top-4 right-44 w-0.5 h-0.5 bg-white rounded-full opacity-70"></div>
+          <div className="absolute top-22 right-60 w-1 h-1 bg-white rounded-full opacity-80"></div>
+          <div className="absolute top-8 right-76 w-0.5 h-0.5 bg-white rounded-full opacity-90"></div>
+          <div className="absolute top-16 right-92 w-1 h-1 bg-white rounded-full opacity-75"></div>
+
+          <div className="absolute top-24 left-24 w-0.5 h-0.5 bg-white rounded-full opacity-60"></div>
+          <div className="absolute top-28 left-56 w-1 h-1 bg-white rounded-full opacity-85"></div>
+          <div className="absolute top-32 right-36 w-0.5 h-0.5 bg-white rounded-full opacity-70"></div>
+          <div className="absolute top-36 right-68 w-1 h-1 bg-white rounded-full opacity-80"></div>
         </div>
 
-        {/* Realistic Tokyo City Skyline */}
-        <div className="absolute bottom-0 left-0 right-0">
-          <svg
-            className="w-full h-72"
-            viewBox="0 0 1200 280"
-            preserveAspectRatio="none"
-          >
-            {/* Detailed Building Silhouettes */}
-
-            {/* Far Background Buildings */}
-            <rect x="0" y="200" width="50" height="80" fill="#0F1419" />
-            <rect x="60" y="190" width="40" height="90" fill="#1A202C" />
-            <rect x="110" y="180" width="60" height="100" fill="#2D3748" />
-            <rect x="180" y="170" width="45" height="110" fill="#0F1419" />
-            <rect x="235" y="160" width="70" height="120" fill="#1A202C" />
-
-            {/* Mid Background Buildings */}
-            <rect x="315" y="140" width="55" height="140" fill="#2D3748" />
-            <rect x="380" y="120" width="80" height="160" fill="#0F1419" />
-            <rect x="470" y="100" width="60" height="180" fill="#1A202C" />
-            <rect x="540" y="80" width="90" height="200" fill="#2D3748" />
-            <rect x="640" y="60" width="70" height="220" fill="#0F1419" />
-            <rect x="720" y="40" width="100" height="240" fill="#1A202C" />
-
-            {/* Foreground Buildings */}
-            <rect x="830" y="90" width="80" height="190" fill="#2D3748" />
-            <rect x="920" y="110" width="60" height="170" fill="#0F1419" />
-            <rect x="990" y="130" width="70" height="150" fill="#1A202C" />
-            <rect x="1070" y="150" width="50" height="130" fill="#2D3748" />
-            <rect x="1130" y="170" width="70" height="110" fill="#0F1419" />
-
-            {/* Building Details and Architectural Features */}
-            <rect x="315" y="140" width="55" height="20" fill="#374151" />
-            <rect x="380" y="120" width="80" height="15" fill="#374151" />
-            <rect x="540" y="80" width="90" height="25" fill="#374151" />
-            <rect x="720" y="40" width="100" height="30" fill="#374151" />
-
-            {/* Realistic Window Grid Patterns */}
-
-            {/* Building 1 Windows */}
-            <rect x="65" y="195" width="3" height="4" fill="#FCD34D" />
-            <rect x="75" y="200" width="3" height="4" fill="#93C5FD" />
-            <rect x="85" y="205" width="3" height="4" fill="#FCD34D" />
-
-            {/* Building 2 Windows */}
-            <rect x="120" y="185" width="4" height="5" fill="#F87171" />
-            <rect x="130" y="190" width="4" height="5" fill="#FCD34D" />
-            <rect x="140" y="195" width="4" height="5" fill="#93C5FD" />
-            <rect x="150" y="200" width="4" height="5" fill="#34D399" />
-
-            {/* Building 3 Windows */}
-            <rect x="190" y="175" width="3" height="6" fill="#A78BFA" />
-            <rect x="200" y="180" width="3" height="6" fill="#FCD34D" />
-            <rect x="210" y="185" width="3" height="6" fill="#F87171" />
-            <rect x="220" y="190" width="3" height="6" fill="#93C5FD" />
-
-            {/* Building 4 Windows - Pattern */}
-            <rect x="245" y="165" width="5" height="7" fill="#34D399" />
-            <rect x="255" y="170" width="5" height="7" fill="#FCD34D" />
-            <rect x="265" y="175" width="5" height="7" fill="#A78BFA" />
-            <rect x="275" y="180" width="5" height="7" fill="#F87171" />
-            <rect x="285" y="185" width="5" height="7" fill="#93C5FD" />
-
-            {/* Tall Building Windows - Grid Pattern */}
-            <rect x="325" y="145" width="4" height="8" fill="#FCD34D" />
-            <rect x="335" y="150" width="4" height="8" fill="#93C5FD" />
-            <rect x="345" y="155" width="4" height="8" fill="#34D399" />
-            <rect x="355" y="160" width="4" height="8" fill="#F87171" />
-
-            <rect x="325" y="170" width="4" height="8" fill="#A78BFA" />
-            <rect x="335" y="175" width="4" height="8" fill="#FCD34D" />
-            <rect x="345" y="180" width="4" height="8" fill="#93C5FD" />
-            <rect x="355" y="185" width="4" height="8" fill="#34D399" />
-
-            {/* Central Skyscraper Windows */}
-            <rect x="390" y="125" width="6" height="10" fill="#F87171" />
-            <rect x="405" y="130" width="6" height="10" fill="#FCD34D" />
-            <rect x="420" y="135" width="6" height="10" fill="#93C5FD" />
-            <rect x="435" y="140" width="6" height="10" fill="#A78BFA" />
-            <rect x="450" y="145" width="6" height="10" fill="#34D399" />
-
-            <rect x="390" y="155" width="6" height="10" fill="#93C5FD" />
-            <rect x="405" y="160" width="6" height="10" fill="#F87171" />
-            <rect x="420" y="165" width="6" height="10" fill="#FCD34D" />
-            <rect x="435" y="170" width="6" height="10" fill="#34D399" />
-            <rect x="450" y="175" width="6" height="10" fill="#A78BFA" />
-
-            {/* Tallest Building Windows */}
-            <rect x="550" y="85" width="8" height="12" fill="#FCD34D" />
-            <rect x="570" y="90" width="8" height="12" fill="#93C5FD" />
-            <rect x="590" y="95" width="8" height="12" fill="#F87171" />
-            <rect x="610" y="100" width="8" height="12" fill="#34D399" />
-
-            <rect x="550" y="115" width="8" height="12" fill="#A78BFA" />
-            <rect x="570" y="120" width="8" height="12" fill="#FCD34D" />
-            <rect x="590" y="125" width="8" height="12" fill="#93C5FD" />
-            <rect x="610" y="130" width="8" height="12" fill="#F87171" />
-
-            <rect x="550" y="155" width="8" height="12" fill="#34D399" />
-            <rect x="570" y="160" width="8" height="12" fill="#A78BFA" />
-            <rect x="590" y="165" width="8" height="12" fill="#FCD34D" />
-            <rect x="610" y="170" width="8" height="12" fill="#93C5FD" />
-
-            {/* Distinctive Neon Signs */}
-            <rect x="320" y="220" width="45" height="8" fill="#FF0080" />
-            <rect x="480" y="180" width="40" height="6" fill="#00FFFF" />
-            <rect x="650" y="200" width="35" height="7" fill="#FFFF00" />
-            <rect x="840" y="240" width="50" height="8" fill="#FF4500" />
-            <rect x="1000" y="210" width="35" height="6" fill="#00FF80" />
-
-            {/* Building Rooftop Details */}
-            <rect x="540" y="75" width="90" height="5" fill="#6B7280" />
-            <rect x="720" y="35" width="100" height="5" fill="#6B7280" />
-            <rect x="380" y="115" width="80" height="5" fill="#6B7280" />
-
-            {/* Antenna and Communication Towers */}
-            <rect x="585" y="65" width="2" height="15" fill="#9CA3AF" />
-            <rect x="770" y="25" width="2" height="15" fill="#9CA3AF" />
-            <rect x="420" y="105" width="2" height="15" fill="#9CA3AF" />
+        {/* Crescent Moon */}
+        <div className="absolute top-12 left-24">
+          <svg className="w-16 h-16" viewBox="0 0 64 64">
+            <path
+              d="M 25 8 A 20 20 0 0 0 25 56 A 16 16 0 0 1 25 8 Z"
+              fill="#F1F5F9"
+              opacity="0.95"
+            />
           </svg>
         </div>
 
-        {/* Realistic City Glow */}
-        <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-indigo-500/15 via-purple-500/10 to-transparent"></div>
+        {/* Minimalist City Skyline Silhouette */}
+        <div className="absolute bottom-0 left-0 right-0">
+          <svg
+            className="w-full h-48"
+            viewBox="0 0 1200 200"
+            preserveAspectRatio="none"
+          >
+            {/* Simple Building Silhouettes */}
+            <rect x="0" y="160" width="80" height="40" fill="#0A0F1C" />
+            <rect x="90" y="140" width="60" height="60" fill="#0A0F1C" />
+            <rect x="160" y="120" width="50" height="80" fill="#0A0F1C" />
+            <rect x="220" y="100" width="70" height="100" fill="#0A0F1C" />
+            <rect x="300" y="80" width="60" height="120" fill="#0A0F1C" />
+            <rect x="370" y="60" width="80" height="140" fill="#0A0F1C" />
+            <rect x="460" y="40" width="50" height="160" fill="#0A0F1C" />
+            <rect x="520" y="20" width="90" height="180" fill="#0A0F1C" />
+            <rect x="620" y="30" width="70" height="170" fill="#0A0F1C" />
+            <rect x="700" y="50" width="60" height="150" fill="#0A0F1C" />
+            <rect x="770" y="70" width="80" height="130" fill="#0A0F1C" />
+            <rect x="860" y="90" width="50" height="110" fill="#0A0F1C" />
+            <rect x="920" y="110" width="70" height="90" fill="#0A0F1C" />
+            <rect x="1000" y="130" width="60" height="70" fill="#0A0F1C" />
+            <rect x="1070" y="150" width="50" height="50" fill="#0A0F1C" />
+            <rect x="1130" y="170" width="70" height="30" fill="#0A0F1C" />
 
-        {/* Atmospheric Haze */}
-        <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-slate-600/20 to-transparent"></div>
+            {/* Simple Street Level Lights */}
+            <rect
+              x="30"
+              y="195"
+              width="2"
+              height="5"
+              fill="#FCD34D"
+              opacity="0.8"
+            />
+            <rect
+              x="80"
+              y="195"
+              width="2"
+              height="5"
+              fill="#FCD34D"
+              opacity="0.6"
+            />
+            <rect
+              x="130"
+              y="195"
+              width="2"
+              height="5"
+              fill="#FCD34D"
+              opacity="0.9"
+            />
+            <rect
+              x="180"
+              y="195"
+              width="2"
+              height="5"
+              fill="#FCD34D"
+              opacity="0.7"
+            />
+            <rect
+              x="230"
+              y="195"
+              width="2"
+              height="5"
+              fill="#FCD34D"
+              opacity="0.8"
+            />
+            <rect
+              x="280"
+              y="195"
+              width="2"
+              height="5"
+              fill="#FCD34D"
+              opacity="0.6"
+            />
+            <rect
+              x="330"
+              y="195"
+              width="2"
+              height="5"
+              fill="#FCD34D"
+              opacity="0.9"
+            />
+            <rect
+              x="380"
+              y="195"
+              width="2"
+              height="5"
+              fill="#FCD34D"
+              opacity="0.7"
+            />
+            <rect
+              x="430"
+              y="195"
+              width="2"
+              height="5"
+              fill="#FCD34D"
+              opacity="0.8"
+            />
+            <rect
+              x="480"
+              y="195"
+              width="2"
+              height="5"
+              fill="#FCD34D"
+              opacity="0.6"
+            />
+            <rect
+              x="530"
+              y="195"
+              width="2"
+              height="5"
+              fill="#FCD34D"
+              opacity="0.9"
+            />
+            <rect
+              x="580"
+              y="195"
+              width="2"
+              height="5"
+              fill="#FCD34D"
+              opacity="0.7"
+            />
+            <rect
+              x="630"
+              y="195"
+              width="2"
+              height="5"
+              fill="#FCD34D"
+              opacity="0.8"
+            />
+            <rect
+              x="680"
+              y="195"
+              width="2"
+              height="5"
+              fill="#FCD34D"
+              opacity="0.6"
+            />
+            <rect
+              x="730"
+              y="195"
+              width="2"
+              height="5"
+              fill="#FCD34D"
+              opacity="0.9"
+            />
+            <rect
+              x="780"
+              y="195"
+              width="2"
+              height="5"
+              fill="#FCD34D"
+              opacity="0.7"
+            />
+            <rect
+              x="830"
+              y="195"
+              width="2"
+              height="5"
+              fill="#FCD34D"
+              opacity="0.8"
+            />
+            <rect
+              x="880"
+              y="195"
+              width="2"
+              height="5"
+              fill="#FCD34D"
+              opacity="0.6"
+            />
+            <rect
+              x="930"
+              y="195"
+              width="2"
+              height="5"
+              fill="#FCD34D"
+              opacity="0.9"
+            />
+            <rect
+              x="980"
+              y="195"
+              width="2"
+              height="5"
+              fill="#FCD34D"
+              opacity="0.7"
+            />
+            <rect
+              x="1030"
+              y="195"
+              width="2"
+              height="5"
+              fill="#FCD34D"
+              opacity="0.8"
+            />
+            <rect
+              x="1080"
+              y="195"
+              width="2"
+              height="5"
+              fill="#FCD34D"
+              opacity="0.6"
+            />
+            <rect
+              x="1130"
+              y="195"
+              width="2"
+              height="5"
+              fill="#FCD34D"
+              opacity="0.9"
+            />
+          </svg>
+        </div>
+
+        {/* Subtle Atmospheric Glow */}
+        <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-blue-900/10 to-transparent"></div>
 
         {/* Hero Text */}
         <div className="absolute top-16 left-8 text-white max-w-lg">
