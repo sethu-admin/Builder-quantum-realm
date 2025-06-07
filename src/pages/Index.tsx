@@ -116,7 +116,7 @@ const Index = () => {
         </div>
       </header>
 
-      {/* Hero Section with Integrated Booking Form */}
+      {/* Hero Section with City Highway Scene */}
       <div className="relative">
         {/* Background Landscape */}
         <div className="relative h-80 bg-gradient-to-r from-slate-700 via-blue-700 to-purple-600 overflow-hidden">
@@ -146,240 +146,253 @@ const Index = () => {
               />
             </svg>
 
-          {/* Trees */}
-          <div className="absolute bottom-24 left-32">
-            <svg className="w-8 h-12" viewBox="0 0 40 60">
-              <rect x="18" y="45" width="4" height="15" fill="#4A5568"/>
-              <circle cx="20" cy="35" r="12" fill="#22C55E"/>
-            </svg>
-          </div>
-
-          <div className="absolute bottom-24 left-60">
-            <svg className="w-6 h-10" viewBox="0 0 30 50">
-              <rect x="13" y="35" width="4" height="15" fill="#4A5568"/>
-              <circle cx="15" cy="25" r="10" fill="#16A34A"/>
-            </svg>
-          </div>
-
-          <div className="absolute bottom-24 right-48">
-            <svg className="w-8 h-12" viewBox="0 0 40 60">
-              <rect x="18" y="45" width="4" height="15" fill="#4A5568"/>
-              <circle cx="20" cy="35" r="12" fill="#22C55E"/>
-            </svg>
-          </div>
-
-          <div className="absolute bottom-24 right-72">
-            <svg className="w-7 h-11" viewBox="0 0 35 55">
-              <rect x="15" y="40" width="4" height="15" fill="#4A5568"/>
-              <circle cx="17" cy="30" r="11" fill="#16A34A"/>
-            </svg>
+            {/* Highway Road */}
+            <div className="absolute bottom-0 left-0 right-0 h-6 bg-gray-800"></div>
+            <div className="absolute bottom-2 left-0 right-0 h-0.5 bg-yellow-300"></div>
           </div>
 
           {/* City Skyline in Distance */}
           <div className="absolute top-12 left-0 right-0">
-            <svg className="w-full h-20" viewBox="0 0 1200 80" preserveAspectRatio="none">
+            <svg
+              className="w-full h-20"
+              viewBox="0 0 1200 80"
+              preserveAspectRatio="none"
+            >
               {/* City Buildings Silhouette */}
-              <rect x="100" y="40" width="30" height="40" fill="rgba(15, 23, 42, 0.6)"/>
-              <rect x="140" y="30" width="25" height="50" fill="rgba(15, 23, 42, 0.5)"/>
-              <rect x="170" y="35" width="35" height="45" fill="rgba(15, 23, 42, 0.6)"/>
-              <rect x="210" y="25" width="20" height="55" fill="rgba(15, 23, 42, 0.7)"/>
-              <rect x="240" y="20" width="40" height="60" fill="rgba(15, 23, 42, 0.6)"/>
-              <rect x="290" y="30" width="25" height="50" fill="rgba(15, 23, 42, 0.5)"/>
-              <rect x="320" y="35" width="30" height="45" fill="rgba(15, 23, 42, 0.6)"/>
+              <rect
+                x="100"
+                y="40"
+                width="30"
+                height="40"
+                fill="rgba(15, 23, 42, 0.6)"
+              />
+              <rect
+                x="140"
+                y="30"
+                width="25"
+                height="50"
+                fill="rgba(15, 23, 42, 0.5)"
+              />
+              <rect
+                x="170"
+                y="35"
+                width="35"
+                height="45"
+                fill="rgba(15, 23, 42, 0.6)"
+              />
+              <rect
+                x="210"
+                y="25"
+                width="20"
+                height="55"
+                fill="rgba(15, 23, 42, 0.7)"
+              />
+              <rect
+                x="240"
+                y="20"
+                width="40"
+                height="60"
+                fill="rgba(15, 23, 42, 0.6)"
+              />
+              <rect
+                x="290"
+                y="30"
+                width="25"
+                height="50"
+                fill="rgba(15, 23, 42, 0.5)"
+              />
+              <rect
+                x="320"
+                y="35"
+                width="30"
+                height="45"
+                fill="rgba(15, 23, 42, 0.6)"
+              />
 
               {/* More buildings on right */}
-              <rect x="800" y="45" width="25" height="35" fill="rgba(15, 23, 42, 0.5)"/>
-              <rect x="830" y="35" width="30" height="45" fill="rgba(15, 23, 42, 0.6)"/>
-              <rect x="870" y="25" width="35" height="55" fill="rgba(15, 23, 42, 0.7)"/>
-              <rect x="915" y="40" width="20" height="40" fill="rgba(15, 23, 42, 0.5)"/>
-              <rect x="945" y="30" width="40" height="50" fill="rgba(15, 23, 42, 0.6)"/>
+              <rect
+                x="800"
+                y="45"
+                width="25"
+                height="35"
+                fill="rgba(15, 23, 42, 0.5)"
+              />
+              <rect
+                x="830"
+                y="35"
+                width="30"
+                height="45"
+                fill="rgba(15, 23, 42, 0.6)"
+              />
+              <rect
+                x="870"
+                y="25"
+                width="35"
+                height="55"
+                fill="rgba(15, 23, 42, 0.7)"
+              />
+              <rect
+                x="915"
+                y="40"
+                width="20"
+                height="40"
+                fill="rgba(15, 23, 42, 0.5)"
+              />
+              <rect
+                x="945"
+                y="30"
+                width="40"
+                height="50"
+                fill="rgba(15, 23, 42, 0.6)"
+              />
 
               {/* Building lights */}
-              <rect x="110" y="45" width="3" height="3" fill="#FDE047" opacity="0.8"/>
-              <rect x="115" y="50" width="3" height="3" fill="#FDE047" opacity="0.6"/>
-              <rect x="180" y="40" width="3" height="3" fill="#FDE047" opacity="0.7"/>
-              <rect x="250" y="30" width="3" height="3" fill="#FDE047" opacity="0.8"/>
-              <rect x="260" y="35" width="3" height="3" fill="#FDE047" opacity="0.6"/>
-              <rect x="875" y="35" width="3" height="3" fill="#FDE047" opacity="0.7"/>
-              <rect x="885" y="40" width="3" height="3" fill="#FDE047" opacity="0.8"/>
-              <rect x="955" y="40" width="3" height="3" fill="#FDE047" opacity="0.6"/>
+              <rect
+                x="110"
+                y="45"
+                width="3"
+                height="3"
+                fill="#FDE047"
+                opacity="0.8"
+              />
+              <rect
+                x="115"
+                y="50"
+                width="3"
+                height="3"
+                fill="#FDE047"
+                opacity="0.6"
+              />
+              <rect
+                x="180"
+                y="40"
+                width="3"
+                height="3"
+                fill="#FDE047"
+                opacity="0.7"
+              />
+              <rect
+                x="250"
+                y="30"
+                width="3"
+                height="3"
+                fill="#FDE047"
+                opacity="0.8"
+              />
+              <rect
+                x="260"
+                y="35"
+                width="3"
+                height="3"
+                fill="#FDE047"
+                opacity="0.6"
+              />
+              <rect
+                x="875"
+                y="35"
+                width="3"
+                height="3"
+                fill="#FDE047"
+                opacity="0.7"
+              />
+              <rect
+                x="885"
+                y="40"
+                width="3"
+                height="3"
+                fill="#FDE047"
+                opacity="0.8"
+              />
+              <rect
+                x="955"
+                y="40"
+                width="3"
+                height="3"
+                fill="#FDE047"
+                opacity="0.6"
+              />
             </svg>
           </div>
 
-          {/* Highway with Buses Coming from City */}
+          {/* Highway extending into distance */}
           <div className="absolute top-16 left-0 right-0">
-            {/* Highway extending into distance */}
-            <svg className="w-full h-16" viewBox="0 0 1200 64" preserveAspectRatio="none">
-              <path d="M0,50 Q600,40 1200,30" stroke="rgba(75, 85, 99, 0.6)" strokeWidth="4" fill="none"/>
-              <path d="M0,54 Q600,44 1200,34" stroke="rgba(251, 191, 36, 0.8)" strokeWidth="2" fill="none"/>
+            <svg
+              className="w-full h-16"
+              viewBox="0 0 1200 64"
+              preserveAspectRatio="none"
+            >
+              <path
+                d="M0,50 Q600,40 1200,30"
+                stroke="rgba(75, 85, 99, 0.6)"
+                strokeWidth="4"
+                fill="none"
+              />
+              <path
+                d="M0,54 Q600,44 1200,34"
+                stroke="rgba(251, 191, 36, 0.8)"
+                strokeWidth="2"
+                fill="none"
+              />
             </svg>
           </div>
 
           {/* Small Buses Coming from Distance */}
           <div className="absolute top-20 left-1/4">
             <svg className="w-4 h-2" viewBox="0 0 20 10">
-              <rect x="1" y="3" width="16" height="5" rx="1" fill="#FF8A80"/>
-              <rect x="1" y="2" width="16" height="2" rx="1" fill="#0F172A"/>
-              <circle cx="4" cy="8" r="1" fill="#374151"/>
-              <circle cx="14" cy="8" r="1" fill="#374151"/>
+              <rect x="1" y="3" width="16" height="5" rx="1" fill="#FF8A80" />
+              <rect x="1" y="2" width="16" height="2" rx="1" fill="#0F172A" />
+              <circle cx="4" cy="8" r="1" fill="#374151" />
+              <circle cx="14" cy="8" r="1" fill="#374151" />
             </svg>
           </div>
 
           <div className="absolute top-24 left-1/3">
             <svg className="w-5 h-3" viewBox="0 0 25 12">
-              <rect x="1" y="4" width="20" height="6" rx="1" fill="#60A5FA"/>
-              <rect x="1" y="3" width="20" height="3" rx="1" fill="#1E3A8A"/>
-              <circle cx="5" cy="10" r="1" fill="#374151"/>
-              <circle cx="18" cy="10" r="1" fill="#374151"/>
+              <rect x="1" y="4" width="20" height="6" rx="1" fill="#60A5FA" />
+              <rect x="1" y="3" width="20" height="3" rx="1" fill="#1E3A8A" />
+              <circle cx="5" cy="10" r="1" fill="#374151" />
+              <circle cx="18" cy="10" r="1" fill="#374151" />
             </svg>
           </div>
 
           <div className="absolute top-28 left-2/5">
             <svg className="w-6 h-3" viewBox="0 0 30 15">
-              <rect x="2" y="5" width="24" height="7" rx="1" fill="#34D399"/>
-              <rect x="2" y="4" width="24" height="3" rx="1" fill="#065F46"/>
-              <circle cx="7" cy="12" r="1.5" fill="#374151"/>
-              <circle cx="21" cy="12" r="1.5" fill="#374151"/>
+              <rect x="2" y="5" width="24" height="7" rx="1" fill="#34D399" />
+              <rect x="2" y="4" width="24" height="3" rx="1" fill="#065F46" />
+              <circle cx="7" cy="12" r="1.5" fill="#374151" />
+              <circle cx="21" cy="12" r="1.5" fill="#374151" />
             </svg>
           </div>
 
           {/* Trees */}
-          <div className="absolute bottom-6 left-32">
+          <div className="absolute bottom-24 left-32">
             <svg className="w-8 h-12" viewBox="0 0 40 60">
               <rect x="18" y="45" width="4" height="15" fill="#4A5568" />
               <circle cx="20" cy="35" r="12" fill="#22C55E" />
             </svg>
           </div>
 
-          <div className="absolute bottom-6 left-60">
+          <div className="absolute bottom-24 left-60">
             <svg className="w-6 h-10" viewBox="0 0 30 50">
               <rect x="13" y="35" width="4" height="15" fill="#4A5568" />
               <circle cx="15" cy="25" r="10" fill="#16A34A" />
             </svg>
           </div>
 
-          <div className="absolute bottom-6 right-48">
+          <div className="absolute bottom-24 right-48">
             <svg className="w-8 h-12" viewBox="0 0 40 60">
               <rect x="18" y="45" width="4" height="15" fill="#4A5568" />
               <circle cx="20" cy="35" r="12" fill="#22C55E" />
             </svg>
           </div>
 
-          <div className="absolute bottom-6 right-72">
+          <div className="absolute bottom-24 right-72">
             <svg className="w-7 h-11" viewBox="0 0 35 55">
               <rect x="15" y="40" width="4" height="15" fill="#4A5568" />
               <circle cx="17" cy="30" r="11" fill="#16A34A" />
             </svg>
           </div>
 
-          {/* Exact Reference Image Bus */}
-          <div className="absolute bottom-6 right-16">
-            <svg className="w-64 h-34" viewBox="0 0 320 170">
-              {/* Bus Shadow */}
-              <ellipse
-                cx="160"
-                cy="155"
-                rx="130"
-                ry="12"
-                fill="rgba(0,0,0,0.3)"
-              />
-
-              {/* Main Bus Body - Coral Pink */}
-              <rect
-                x="25"
-                y="60"
-                width="210"
-                height="75"
-                rx="2"
-                fill="#FF8A80"
-              />
-
-              {/* Dark Top Section */}
-              <rect
-                x="25"
-                y="45"
-                width="210"
-                height="25"
-                rx="2"
-                fill="#0F172A"
-              />
-              <rect x="25" y="60" width="210" height="10" fill="#0F172A" />
-
-              {/* Front Section */}
-              <path
-                d="M 235 45 Q 260 50 268 75 L 268 120 Q 260 135 235 135 Z"
-                fill="#FF8A80"
-              />
-              <path
-                d="M 235 45 Q 255 50 262 70 L 262 105 Q 255 115 235 115 Z"
-                fill="#0F172A"
-              />
-
-              {/* Long Tinted Window Strip */}
-              <rect
-                x="35"
-                y="50"
-                width="190"
-                height="16"
-                rx="1"
-                fill="#1E3A8A"
-              />
-
-              {/* Front Windshield */}
-              <path
-                d="M 235 50 Q 250 52 257 70 L 257 105 Q 250 112 235 112 Z"
-                fill="#1E3A8A"
-              />
-
-              {/* Wheels */}
-              <circle cx="70" cy="145" r="25" fill="#1F2937" />
-              <circle cx="70" cy="145" r="19" fill="#374151" />
-              <circle cx="70" cy="145" r="11" fill="#9CA3AF" />
-
-              <circle cx="200" cy="145" r="25" fill="#1F2937" />
-              <circle cx="200" cy="145" r="19" fill="#374151" />
-              <circle cx="200" cy="145" r="11" fill="#9CA3AF" />
-
-              {/* Door */}
-              <rect
-                x="30"
-                y="80"
-                width="24"
-                height="50"
-                rx="2"
-                fill="#0F172A"
-              />
-
-              {/* Red Accent Stripe */}
-              <rect x="25" y="95" width="210" height="6" fill="#DC2626" />
-
-              {/* Front Grille */}
-              <rect
-                x="255"
-                y="65"
-                width="12"
-                height="40"
-                rx="1"
-                fill="#B91C1C"
-              />
-
-              {/* Headlight */}
-              <circle cx="262" cy="85" r="10" fill="#FDE047" />
-
-              {/* Side Mirror */}
-              <ellipse cx="270" cy="75" rx="2" ry="7" fill="#374151" />
-
-              {/* Route Number */}
-              <rect
-                x="45"
-                y="40"
-                width="55"
-                height="10"
-                rx="2"
-                fill="#FDE047"
-              />
-            </svg>
-          </div>
           {/* Hero Text */}
           <div className="absolute top-12 left-8 text-white max-w-lg">
             <h1 className="text-4xl md:text-5xl font-bold mb-2 leading-tight">
