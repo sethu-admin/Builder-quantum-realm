@@ -104,519 +104,156 @@ const Booking = () => {
         </div>
       </header>
 
-      {/* Hero Section with Tokyo Night City */}
-      <div className="relative h-96 bg-gradient-to-b from-indigo-900 via-purple-900 to-slate-900 overflow-hidden">
-        {/* Night Sky with Stars */}
+      {/* Hero Section with Realistic Tokyo Night City */}
+      <div className="relative h-96 bg-gradient-to-b from-slate-800 via-indigo-900 to-purple-900 overflow-hidden">
+        {/* Realistic Night Sky */}
         <div className="absolute inset-0">
-          <div className="absolute top-8 left-20 w-1 h-1 bg-white rounded-full animate-pulse"></div>
-          <div className="absolute top-12 left-40 w-1 h-1 bg-white rounded-full opacity-80"></div>
-          <div className="absolute top-6 right-32 w-1 h-1 bg-white rounded-full animate-pulse"></div>
-          <div className="absolute top-16 right-60 w-1 h-1 bg-white rounded-full opacity-60"></div>
-          <div className="absolute top-10 left-80 w-1 h-1 bg-white rounded-full"></div>
-          <div className="absolute top-20 right-20 w-1 h-1 bg-white rounded-full animate-pulse"></div>
+          {/* Static Stars */}
+          <div className="absolute top-8 left-20 w-1 h-1 bg-white rounded-full opacity-90"></div>
+          <div className="absolute top-12 left-40 w-0.5 h-0.5 bg-white rounded-full opacity-70"></div>
+          <div className="absolute top-6 right-32 w-1 h-1 bg-white rounded-full opacity-85"></div>
+          <div className="absolute top-16 right-60 w-0.5 h-0.5 bg-white rounded-full opacity-60"></div>
+          <div className="absolute top-10 left-80 w-1 h-1 bg-white rounded-full opacity-80"></div>
+          <div className="absolute top-20 right-20 w-0.5 h-0.5 bg-white rounded-full opacity-75"></div>
+          <div className="absolute top-14 left-60 w-0.5 h-0.5 bg-white rounded-full opacity-65"></div>
+          <div className="absolute top-4 right-80 w-1 h-1 bg-white rounded-full opacity-85"></div>
+          <div className="absolute top-18 left-100 w-0.5 h-0.5 bg-white rounded-full opacity-70"></div>
         </div>
 
-        {/* Tokyo City Skyline */}
+        {/* Realistic Tokyo City Skyline */}
         <div className="absolute bottom-0 left-0 right-0">
           <svg
-            className="w-full h-64"
-            viewBox="0 0 1200 250"
+            className="w-full h-72"
+            viewBox="0 0 1200 280"
             preserveAspectRatio="none"
           >
-            {/* Background Buildings */}
-            <rect x="0" y="180" width="80" height="70" fill="#1E293B" />
-            <rect x="90" y="160" width="60" height="90" fill="#334155" />
-            <rect x="160" y="140" width="70" height="110" fill="#475569" />
-            <rect x="240" y="120" width="50" height="130" fill="#1E293B" />
-            <rect x="300" y="100" width="80" height="150" fill="#334155" />
-            <rect x="390" y="80" width="60" height="170" fill="#475569" />
-            <rect x="460" y="60" width="90" height="190" fill="#1E293B" />
-            <rect x="560" y="40" width="70" height="210" fill="#334155" />
-            <rect x="640" y="90" width="80" height="160" fill="#475569" />
-            <rect x="730" y="110" width="60" height="140" fill="#1E293B" />
-            <rect x="800" y="130" width="70" height="120" fill="#334155" />
-            <rect x="880" y="150" width="50" height="100" fill="#475569" />
-            <rect x="940" y="170" width="80" height="80" fill="#1E293B" />
-            <rect x="1030" y="160" width="60" height="90" fill="#334155" />
-            <rect x="1100" y="180" width="100" height="70" fill="#475569" />
+            {/* Detailed Building Silhouettes */}
 
-            {/* Building Windows - Glowing */}
-            <rect
-              x="10"
-              y="190"
-              width="8"
-              height="6"
-              fill="#FDE047"
-              opacity="0.9"
-            />
-            <rect
-              x="25"
-              y="195"
-              width="8"
-              height="6"
-              fill="#60A5FA"
-              opacity="0.8"
-            />
-            <rect
-              x="40"
-              y="200"
-              width="8"
-              height="6"
-              fill="#FDE047"
-              opacity="0.7"
-            />
-            <rect
-              x="55"
-              y="185"
-              width="8"
-              height="6"
-              fill="#34D399"
-              opacity="0.8"
-            />
+            {/* Far Background Buildings */}
+            <rect x="0" y="200" width="50" height="80" fill="#0F1419" />
+            <rect x="60" y="190" width="40" height="90" fill="#1A202C" />
+            <rect x="110" y="180" width="60" height="100" fill="#2D3748" />
+            <rect x="180" y="170" width="45" height="110" fill="#0F1419" />
+            <rect x="235" y="160" width="70" height="120" fill="#1A202C" />
 
-            <rect
-              x="100"
-              y="170"
-              width="6"
-              height="8"
-              fill="#F87171"
-              opacity="0.9"
-            />
-            <rect
-              x="115"
-              y="180"
-              width="6"
-              height="8"
-              fill="#FDE047"
-              opacity="0.8"
-            />
-            <rect
-              x="130"
-              y="175"
-              width="6"
-              height="8"
-              fill="#60A5FA"
-              opacity="0.7"
-            />
+            {/* Mid Background Buildings */}
+            <rect x="315" y="140" width="55" height="140" fill="#2D3748" />
+            <rect x="380" y="120" width="80" height="160" fill="#0F1419" />
+            <rect x="470" y="100" width="60" height="180" fill="#1A202C" />
+            <rect x="540" y="80" width="90" height="200" fill="#2D3748" />
+            <rect x="640" y="60" width="70" height="220" fill="#0F1419" />
+            <rect x="720" y="40" width="100" height="240" fill="#1A202C" />
 
-            <rect
-              x="170"
-              y="150"
-              width="8"
-              height="10"
-              fill="#A78BFA"
-              opacity="0.9"
-            />
-            <rect
-              x="185"
-              y="160"
-              width="8"
-              height="10"
-              fill="#FDE047"
-              opacity="0.8"
-            />
-            <rect
-              x="200"
-              y="155"
-              width="8"
-              height="10"
-              fill="#34D399"
-              opacity="0.7"
-            />
-            <rect
-              x="215"
-              y="165"
-              width="8"
-              height="10"
-              fill="#F87171"
-              opacity="0.8"
-            />
+            {/* Foreground Buildings */}
+            <rect x="830" y="90" width="80" height="190" fill="#2D3748" />
+            <rect x="920" y="110" width="60" height="170" fill="#0F1419" />
+            <rect x="990" y="130" width="70" height="150" fill="#1A202C" />
+            <rect x="1070" y="150" width="50" height="130" fill="#2D3748" />
+            <rect x="1130" y="170" width="70" height="110" fill="#0F1419" />
 
-            <rect
-              x="250"
-              y="130"
-              width="6"
-              height="12"
-              fill="#60A5FA"
-              opacity="0.9"
-            />
-            <rect
-              x="265"
-              y="140"
-              width="6"
-              height="12"
-              fill="#FDE047"
-              opacity="0.8"
-            />
-            <rect
-              x="280"
-              y="135"
-              width="6"
-              height="12"
-              fill="#A78BFA"
-              opacity="0.7"
-            />
+            {/* Building Details and Architectural Features */}
+            <rect x="315" y="140" width="55" height="20" fill="#374151" />
+            <rect x="380" y="120" width="80" height="15" fill="#374151" />
+            <rect x="540" y="80" width="90" height="25" fill="#374151" />
+            <rect x="720" y="40" width="100" height="30" fill="#374151" />
 
-            <rect
-              x="310"
-              y="110"
-              width="10"
-              height="14"
-              fill="#34D399"
-              opacity="0.9"
-            />
-            <rect
-              x="330"
-              y="120"
-              width="10"
-              height="14"
-              fill="#F87171"
-              opacity="0.8"
-            />
-            <rect
-              x="350"
-              y="115"
-              width="10"
-              height="14"
-              fill="#FDE047"
-              opacity="0.7"
-            />
-            <rect
-              x="370"
-              y="125"
-              width="10"
-              height="14"
-              fill="#60A5FA"
-              opacity="0.8"
-            />
+            {/* Realistic Window Grid Patterns */}
 
-            <rect
-              x="400"
-              y="90"
-              width="8"
-              height="16"
-              fill="#A78BFA"
-              opacity="0.9"
-            />
-            <rect
-              x="420"
-              y="100"
-              width="8"
-              height="16"
-              fill="#34D399"
-              opacity="0.8"
-            />
-            <rect
-              x="440"
-              y="95"
-              width="8"
-              height="16"
-              fill="#FDE047"
-              opacity="0.7"
-            />
+            {/* Building 1 Windows */}
+            <rect x="65" y="195" width="3" height="4" fill="#FCD34D" />
+            <rect x="75" y="200" width="3" height="4" fill="#93C5FD" />
+            <rect x="85" y="205" width="3" height="4" fill="#FCD34D" />
 
-            <rect
-              x="470"
-              y="70"
-              width="12"
-              height="18"
-              fill="#F87171"
-              opacity="0.9"
-            />
-            <rect
-              x="490"
-              y="80"
-              width="12"
-              height="18"
-              fill="#60A5FA"
-              opacity="0.8"
-            />
-            <rect
-              x="510"
-              y="75"
-              width="12"
-              height="18"
-              fill="#A78BFA"
-              opacity="0.7"
-            />
-            <rect
-              x="530"
-              y="85"
-              width="12"
-              height="18"
-              fill="#34D399"
-              opacity="0.8"
-            />
+            {/* Building 2 Windows */}
+            <rect x="120" y="185" width="4" height="5" fill="#F87171" />
+            <rect x="130" y="190" width="4" height="5" fill="#FCD34D" />
+            <rect x="140" y="195" width="4" height="5" fill="#93C5FD" />
+            <rect x="150" y="200" width="4" height="5" fill="#34D399" />
 
-            <rect
-              x="570"
-              y="50"
-              width="10"
-              height="20"
-              fill="#FDE047"
-              opacity="0.9"
-            />
-            <rect
-              x="590"
-              y="60"
-              width="10"
-              height="20"
-              fill="#F87171"
-              opacity="0.8"
-            />
-            <rect
-              x="610"
-              y="55"
-              width="10"
-              height="20"
-              fill="#60A5FA"
-              opacity="0.7"
-            />
+            {/* Building 3 Windows */}
+            <rect x="190" y="175" width="3" height="6" fill="#A78BFA" />
+            <rect x="200" y="180" width="3" height="6" fill="#FCD34D" />
+            <rect x="210" y="185" width="3" height="6" fill="#F87171" />
+            <rect x="220" y="190" width="3" height="6" fill="#93C5FD" />
 
-            <rect
-              x="650"
-              y="100"
-              width="12"
-              height="16"
-              fill="#A78BFA"
-              opacity="0.9"
-            />
-            <rect
-              x="670"
-              y="110"
-              width="12"
-              height="16"
-              fill="#34D399"
-              opacity="0.8"
-            />
-            <rect
-              x="690"
-              y="105"
-              width="12"
-              height="16"
-              fill="#FDE047"
-              opacity="0.7"
-            />
-            <rect
-              x="710"
-              y="115"
-              width="12"
-              height="16"
-              fill="#F87171"
-              opacity="0.8"
-            />
+            {/* Building 4 Windows - Pattern */}
+            <rect x="245" y="165" width="5" height="7" fill="#34D399" />
+            <rect x="255" y="170" width="5" height="7" fill="#FCD34D" />
+            <rect x="265" y="175" width="5" height="7" fill="#A78BFA" />
+            <rect x="275" y="180" width="5" height="7" fill="#F87171" />
+            <rect x="285" y="185" width="5" height="7" fill="#93C5FD" />
 
-            <rect
-              x="740"
-              y="120"
-              width="8"
-              height="14"
-              fill="#60A5FA"
-              opacity="0.9"
-            />
-            <rect
-              x="760"
-              y="130"
-              width="8"
-              height="14"
-              fill="#A78BFA"
-              opacity="0.8"
-            />
-            <rect
-              x="780"
-              y="125"
-              width="8"
-              height="14"
-              fill="#34D399"
-              opacity="0.7"
-            />
+            {/* Tall Building Windows - Grid Pattern */}
+            <rect x="325" y="145" width="4" height="8" fill="#FCD34D" />
+            <rect x="335" y="150" width="4" height="8" fill="#93C5FD" />
+            <rect x="345" y="155" width="4" height="8" fill="#34D399" />
+            <rect x="355" y="160" width="4" height="8" fill="#F87171" />
 
-            <rect
-              x="810"
-              y="140"
-              width="10"
-              height="12"
-              fill="#FDE047"
-              opacity="0.9"
-            />
-            <rect
-              x="830"
-              y="150"
-              width="10"
-              height="12"
-              fill="#F87171"
-              opacity="0.8"
-            />
-            <rect
-              x="850"
-              y="145"
-              width="10"
-              height="12"
-              fill="#60A5FA"
-              opacity="0.7"
-            />
+            <rect x="325" y="170" width="4" height="8" fill="#A78BFA" />
+            <rect x="335" y="175" width="4" height="8" fill="#FCD34D" />
+            <rect x="345" y="180" width="4" height="8" fill="#93C5FD" />
+            <rect x="355" y="185" width="4" height="8" fill="#34D399" />
 
-            <rect
-              x="890"
-              y="160"
-              width="6"
-              height="10"
-              fill="#A78BFA"
-              opacity="0.9"
-            />
-            <rect
-              x="905"
-              y="170"
-              width="6"
-              height="10"
-              fill="#34D399"
-              opacity="0.8"
-            />
-            <rect
-              x="920"
-              y="165"
-              width="6"
-              height="10"
-              fill="#FDE047"
-              opacity="0.7"
-            />
+            {/* Central Skyscraper Windows */}
+            <rect x="390" y="125" width="6" height="10" fill="#F87171" />
+            <rect x="405" y="130" width="6" height="10" fill="#FCD34D" />
+            <rect x="420" y="135" width="6" height="10" fill="#93C5FD" />
+            <rect x="435" y="140" width="6" height="10" fill="#A78BFA" />
+            <rect x="450" y="145" width="6" height="10" fill="#34D399" />
 
-            <rect
-              x="950"
-              y="180"
-              width="8"
-              height="8"
-              fill="#F87171"
-              opacity="0.9"
-            />
-            <rect
-              x="970"
-              y="185"
-              width="8"
-              height="8"
-              fill="#60A5FA"
-              opacity="0.8"
-            />
-            <rect
-              x="990"
-              y="190"
-              width="8"
-              height="8"
-              fill="#A78BFA"
-              opacity="0.7"
-            />
-            <rect
-              x="1010"
-              y="175"
-              width="8"
-              height="8"
-              fill="#34D399"
-              opacity="0.8"
-            />
+            <rect x="390" y="155" width="6" height="10" fill="#93C5FD" />
+            <rect x="405" y="160" width="6" height="10" fill="#F87171" />
+            <rect x="420" y="165" width="6" height="10" fill="#FCD34D" />
+            <rect x="435" y="170" width="6" height="10" fill="#34D399" />
+            <rect x="450" y="175" width="6" height="10" fill="#A78BFA" />
 
-            <rect
-              x="1040"
-              y="170"
-              width="6"
-              height="10"
-              fill="#FDE047"
-              opacity="0.9"
-            />
-            <rect
-              x="1055"
-              y="180"
-              width="6"
-              height="10"
-              fill="#F87171"
-              opacity="0.8"
-            />
-            <rect
-              x="1070"
-              y="175"
-              width="6"
-              height="10"
-              fill="#60A5FA"
-              opacity="0.7"
-            />
+            {/* Tallest Building Windows */}
+            <rect x="550" y="85" width="8" height="12" fill="#FCD34D" />
+            <rect x="570" y="90" width="8" height="12" fill="#93C5FD" />
+            <rect x="590" y="95" width="8" height="12" fill="#F87171" />
+            <rect x="610" y="100" width="8" height="12" fill="#34D399" />
 
-            <rect
-              x="1110"
-              y="190"
-              width="10"
-              height="8"
-              fill="#A78BFA"
-              opacity="0.9"
-            />
-            <rect
-              x="1130"
-              y="195"
-              width="10"
-              height="8"
-              fill="#34D399"
-              opacity="0.8"
-            />
-            <rect
-              x="1150"
-              y="200"
-              width="10"
-              height="8"
-              fill="#FDE047"
-              opacity="0.7"
-            />
-            <rect
-              x="1170"
-              y="185"
-              width="10"
-              height="8"
-              fill="#F87171"
-              opacity="0.8"
-            />
+            <rect x="550" y="115" width="8" height="12" fill="#A78BFA" />
+            <rect x="570" y="120" width="8" height="12" fill="#FCD34D" />
+            <rect x="590" y="125" width="8" height="12" fill="#93C5FD" />
+            <rect x="610" y="130" width="8" height="12" fill="#F87171" />
 
-            {/* Neon Signs */}
-            <rect
-              x="300"
-              y="180"
-              width="60"
-              height="8"
-              fill="#FF1493"
-              opacity="0.8"
-            />
-            <rect
-              x="470"
-              y="140"
-              width="50"
-              height="6"
-              fill="#00FFFF"
-              opacity="0.9"
-            />
-            <rect
-              x="650"
-              y="160"
-              width="40"
-              height="6"
-              fill="#FFFF00"
-              opacity="0.8"
-            />
-            <rect
-              x="950"
-              y="200"
-              width="45"
-              height="6"
-              fill="#FF4500"
-              opacity="0.9"
-            />
+            <rect x="550" y="155" width="8" height="12" fill="#34D399" />
+            <rect x="570" y="160" width="8" height="12" fill="#A78BFA" />
+            <rect x="590" y="165" width="8" height="12" fill="#FCD34D" />
+            <rect x="610" y="170" width="8" height="12" fill="#93C5FD" />
+
+            {/* Distinctive Neon Signs */}
+            <rect x="320" y="220" width="45" height="8" fill="#FF0080" />
+            <rect x="480" y="180" width="40" height="6" fill="#00FFFF" />
+            <rect x="650" y="200" width="35" height="7" fill="#FFFF00" />
+            <rect x="840" y="240" width="50" height="8" fill="#FF4500" />
+            <rect x="1000" y="210" width="35" height="6" fill="#00FF80" />
+
+            {/* Building Rooftop Details */}
+            <rect x="540" y="75" width="90" height="5" fill="#6B7280" />
+            <rect x="720" y="35" width="100" height="5" fill="#6B7280" />
+            <rect x="380" y="115" width="80" height="5" fill="#6B7280" />
+
+            {/* Antenna and Communication Towers */}
+            <rect x="585" y="65" width="2" height="15" fill="#9CA3AF" />
+            <rect x="770" y="25" width="2" height="15" fill="#9CA3AF" />
+            <rect x="420" y="105" width="2" height="15" fill="#9CA3AF" />
           </svg>
         </div>
 
-        {/* Glowing City Lights Effect */}
-        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-purple-500/20 to-transparent"></div>
+        {/* Realistic City Glow */}
+        <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-indigo-500/15 via-purple-500/10 to-transparent"></div>
+
+        {/* Atmospheric Haze */}
+        <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-slate-600/20 to-transparent"></div>
 
         {/* Hero Text */}
         <div className="absolute top-16 left-8 text-white max-w-lg">
-          <h1 className="text-4xl md:text-5xl font-bold mb-2 leading-tight">
+          <h1 className="text-4xl md:text-5xl font-bold mb-2 leading-tight drop-shadow-lg">
             India's No.1 online
           </h1>
-          <h2 className="text-4xl md:text-5xl font-bold leading-tight">
+          <h2 className="text-4xl md:text-5xl font-bold leading-tight drop-shadow-lg">
             bus ticket booking site
           </h2>
         </div>
