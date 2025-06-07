@@ -116,13 +116,109 @@ const Index = () => {
         </div>
       </header>
 
-      {/* Train Image Section */}
+      {/* Train Animation Section */}
       <div className="relative h-32 bg-gradient-to-r from-blue-600 to-purple-600 overflow-hidden">
         <div className="absolute inset-0 bg-black bg-opacity-20"></div>
-        <div className="relative z-10 flex items-center justify-center h-full">
-          <Train className="h-16 w-16 text-white opacity-30" />
+
+        {/* Animated Train */}
+        <div className="relative z-10 h-full flex items-center">
+          <div className="animate-train">
+            <div className="flex items-center">
+              {/* Train Engine */}
+              <div className="relative">
+                <Train className="h-12 w-12 text-white" />
+                {/* Smoke animation */}
+                <div className="absolute -top-2 left-8">
+                  <div className="animate-smoke-1 w-2 h-2 bg-white rounded-full opacity-60"></div>
+                </div>
+                <div className="absolute -top-1 left-10">
+                  <div className="animate-smoke-2 w-1.5 h-1.5 bg-white rounded-full opacity-40"></div>
+                </div>
+                <div className="absolute -top-3 left-12">
+                  <div className="animate-smoke-3 w-1 h-1 bg-white rounded-full opacity-30"></div>
+                </div>
+              </div>
+
+              {/* Train Cars */}
+              <div className="flex ml-2 space-x-1">
+                <div className="w-8 h-6 bg-white bg-opacity-80 rounded-sm"></div>
+                <div className="w-8 h-6 bg-white bg-opacity-70 rounded-sm"></div>
+                <div className="w-8 h-6 bg-white bg-opacity-60 rounded-sm"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Railway Track */}
+        <div className="absolute bottom-4 left-0 right-0 h-1">
+          <div className="w-full h-0.5 bg-white bg-opacity-30"></div>
+          <div className="flex justify-between mt-1">
+            {Array.from({ length: 20 }, (_, i) => (
+              <div key={i} className="w-2 h-1 bg-white bg-opacity-40"></div>
+            ))}
+          </div>
         </div>
       </div>
+
+      <style jsx>{`
+        @keyframes trainMove {
+          0% {
+            transform: translateX(-100px);
+          }
+          100% {
+            transform: translateX(calc(100vw + 100px));
+          }
+        }
+
+        @keyframes smoke1 {
+          0% {
+            transform: translateY(0) scale(1);
+            opacity: 0.6;
+          }
+          100% {
+            transform: translateY(-20px) scale(1.5);
+            opacity: 0;
+          }
+        }
+
+        @keyframes smoke2 {
+          0% {
+            transform: translateY(0) scale(1);
+            opacity: 0.4;
+          }
+          100% {
+            transform: translateY(-25px) scale(1.8);
+            opacity: 0;
+          }
+        }
+
+        @keyframes smoke3 {
+          0% {
+            transform: translateY(0) scale(1);
+            opacity: 0.3;
+          }
+          100% {
+            transform: translateY(-30px) scale(2);
+            opacity: 0;
+          }
+        }
+
+        .animate-train {
+          animation: trainMove 8s linear infinite;
+        }
+
+        .animate-smoke-1 {
+          animation: smoke1 1s ease-out infinite;
+        }
+
+        .animate-smoke-2 {
+          animation: smoke2 1.2s ease-out infinite 0.2s;
+        }
+
+        .animate-smoke-3 {
+          animation: smoke3 1.4s ease-out infinite 0.4s;
+        }
+      `}</style>
 
       {/* Main Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
