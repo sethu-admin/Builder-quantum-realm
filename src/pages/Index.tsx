@@ -116,236 +116,126 @@ const Index = () => {
         </div>
       </header>
 
-      {/* Realistic Bus Animation Section */}
-      <div className="relative h-48 overflow-hidden">
-        {/* Sky Gradient */}
-        <div className="absolute inset-0 bg-gradient-to-b from-purple-400 via-blue-400 to-green-300"></div>
+      {/* Professional Hero Section */}
+      <div className="relative h-64 bg-gradient-to-r from-slate-800 via-blue-800 to-purple-600 overflow-hidden">
+        {/* Geometric Background Pattern */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-0 left-0 w-64 h-64 bg-white transform rotate-45 -translate-x-32 -translate-y-32"></div>
+          <div className="absolute top-0 right-0 w-48 h-48 bg-white transform rotate-12 translate-x-24 -translate-y-24"></div>
+        </div>
 
-        {/* Mountains/Hills Background */}
+        {/* Landscape Elements */}
         <div className="absolute bottom-0 left-0 right-0">
-          {/* Back Hills */}
+          {/* Hills */}
           <svg
             className="absolute bottom-0 w-full h-32"
-            viewBox="0 0 1200 200"
+            viewBox="0 0 1200 120"
             preserveAspectRatio="none"
           >
             <path
-              d="M0,200 L0,80 Q200,20 400,60 T800,40 Q1000,60 1200,80 L1200,200 Z"
-              fill="rgba(139, 69, 19, 0.3)"
+              d="M0,120 L0,60 Q300,20 600,40 T1200,50 L1200,120 Z"
+              fill="rgba(34, 197, 94, 0.4)"
             />
           </svg>
 
-          {/* Front Hills */}
           <svg
-            className="absolute bottom-0 w-full h-24"
-            viewBox="0 0 1200 150"
+            className="absolute bottom-0 w-full h-20"
+            viewBox="0 0 1200 80"
             preserveAspectRatio="none"
           >
             <path
-              d="M0,150 L0,60 Q300,20 600,50 T1200,40 L1200,150 Z"
+              d="M0,80 L0,40 Q400,10 800,30 T1200,25 L1200,80 Z"
               fill="rgba(34, 197, 94, 0.6)"
             />
           </svg>
 
           {/* Road */}
-          <div className="absolute bottom-6 left-0 right-0 h-2 bg-gray-700"></div>
-          <div className="absolute bottom-7 left-0 right-0 h-0.5">
-            <div className="w-full h-full bg-yellow-300 opacity-80 animate-dash"></div>
+          <div className="absolute bottom-0 left-0 right-0 h-8 bg-gray-800"></div>
+          <div className="absolute bottom-3 left-0 right-0 h-0.5 bg-yellow-300 opacity-80"></div>
+        </div>
+
+        {/* Static Trees */}
+        <div className="absolute bottom-8 left-20">
+          <svg className="w-6 h-10" viewBox="0 0 30 50">
+            <rect x="13" y="35" width="4" height="15" fill="#4A5568" />
+            <circle cx="15" cy="25" r="10" fill="#22C55E" />
+          </svg>
+        </div>
+
+        <div className="absolute bottom-8 left-40">
+          <svg className="w-5 h-8" viewBox="0 0 25 40">
+            <rect x="11" y="28" width="3" height="12" fill="#4A5568" />
+            <circle cx="12.5" cy="20" r="8" fill="#16A34A" />
+          </svg>
+        </div>
+
+        <div className="absolute bottom-8 right-40">
+          <svg className="w-6 h-10" viewBox="0 0 30 50">
+            <rect x="13" y="35" width="4" height="15" fill="#4A5568" />
+            <circle cx="15" cy="25" r="10" fill="#22C55E" />
+          </svg>
+        </div>
+
+        {/* Static Professional Bus */}
+        <div className="absolute bottom-8 right-20">
+          <svg className="w-20 h-12" viewBox="0 0 120 70">
+            {/* Bus Shadow */}
+            <ellipse cx="60" cy="65" rx="50" ry="3" fill="rgba(0,0,0,0.2)" />
+
+            {/* Bus Body */}
+            <rect x="10" y="20" width="90" height="35" rx="8" fill="#EC4899" />
+            <rect x="15" y="25" width="80" height="25" rx="4" fill="#BE185D" />
+
+            {/* Windows */}
+            <rect x="20" y="28" width="14" height="10" rx="2" fill="#DBEAFE" />
+            <rect x="36" y="28" width="14" height="10" rx="2" fill="#DBEAFE" />
+            <rect x="52" y="28" width="14" height="10" rx="2" fill="#DBEAFE" />
+            <rect x="68" y="28" width="14" height="10" rx="2" fill="#DBEAFE" />
+
+            {/* Front Windshield */}
+            <rect x="85" y="28" width="10" height="18" rx="2" fill="#BFDBFE" />
+
+            {/* Wheels */}
+            <circle cx="25" cy="52" r="10" fill="#374151" />
+            <circle cx="80" cy="52" r="10" fill="#374151" />
+            <circle cx="25" cy="52" r="6" fill="#6B7280" />
+            <circle cx="80" cy="52" r="6" fill="#6B7280" />
+
+            {/* Headlights */}
+            <circle cx="98" cy="35" r="3" fill="#FEF3C7" />
+            <circle cx="98" cy="45" r="3" fill="#FCA5A5" />
+
+            {/* Door */}
+            <rect x="16" y="40" width="8" height="12" rx="1" fill="#7C2D12" />
+          </svg>
+        </div>
+
+        {/* Professional Hero Text */}
+        <div className="absolute inset-0 flex items-center justify-start">
+          <div className="max-w-7xl mx-auto px-8 w-full">
+            <div className="text-left text-white max-w-lg">
+              <h1 className="text-4xl md:text-5xl font-bold mb-3 leading-tight">
+                India's No.1 online
+              </h1>
+              <h2 className="text-3xl md:text-4xl font-bold text-blue-200 leading-tight">
+                bus ticket booking site
+              </h2>
+              <p className="text-lg text-blue-100 mt-4 opacity-90">
+                Book your journey with confidence and comfort
+              </p>
+            </div>
           </div>
         </div>
 
-        {/* Trees */}
-        <div className="absolute bottom-12 left-20">
-          <svg className="w-8 h-12 animate-sway-1" viewBox="0 0 40 60">
-            <rect x="18" y="45" width="4" height="15" fill="#8B4513" />
-            <circle cx="20" cy="35" r="12" fill="#22C55E" />
+        {/* Subtle Clouds */}
+        <div className="absolute top-6 right-32">
+          <svg className="w-16 h-8 opacity-30" viewBox="0 0 80 40">
+            <circle cx="20" cy="20" r="12" fill="white" />
+            <circle cx="35" cy="18" r="15" fill="white" />
+            <circle cx="50" cy="20" r="12" fill="white" />
           </svg>
-        </div>
-
-        <div className="absolute bottom-12 left-40">
-          <svg className="w-6 h-10 animate-sway-2" viewBox="0 0 30 50">
-            <rect x="13" y="35" width="4" height="15" fill="#8B4513" />
-            <circle cx="15" cy="25" r="10" fill="#16A34A" />
-          </svg>
-        </div>
-
-        <div className="absolute bottom-12 right-32">
-          <svg className="w-7 h-11 animate-sway-3" viewBox="0 0 35 55">
-            <rect x="15" y="40" width="4" height="15" fill="#8B4513" />
-            <circle cx="17" cy="30" r="11" fill="#22C55E" />
-          </svg>
-        </div>
-
-        {/* Animated Bus */}
-        <div className="relative z-10 h-full flex items-end pb-10">
-          <div className="animate-bus-move">
-            <svg className="w-16 h-10" viewBox="0 0 100 60">
-              {/* Bus Body */}
-              <rect x="5" y="15" width="80" height="35" rx="5" fill="#EC4899" />
-              <rect
-                x="10"
-                y="20"
-                width="70"
-                height="20"
-                rx="2"
-                fill="#DB2777"
-              />
-
-              {/* Windows */}
-              <rect x="15" y="22" width="12" height="8" rx="1" fill="#93C5FD" />
-              <rect x="30" y="22" width="12" height="8" rx="1" fill="#93C5FD" />
-              <rect x="45" y="22" width="12" height="8" rx="1" fill="#93C5FD" />
-              <rect x="60" y="22" width="12" height="8" rx="1" fill="#93C5FD" />
-
-              {/* Windshield */}
-              <rect x="75" y="22" width="8" height="15" rx="1" fill="#DBEAFE" />
-
-              {/* Wheels */}
-              <circle cx="20" cy="47" r="8" fill="#374151" />
-              <circle cx="70" cy="47" r="8" fill="#374151" />
-              <circle cx="20" cy="47" r="5" fill="#9CA3AF" />
-              <circle cx="70" cy="47" r="5" fill="#9CA3AF" />
-
-              {/* Details */}
-              <rect x="8" y="35" width="6" height="4" rx="1" fill="#FBBF24" />
-              <rect x="85" y="35" width="6" height="4" rx="1" fill="#EF4444" />
-            </svg>
-          </div>
-        </div>
-
-        {/* Clouds */}
-        <div className="absolute top-4 left-16 animate-cloud-1">
-          <svg className="w-12 h-6" viewBox="0 0 60 30">
-            <circle cx="15" cy="15" r="8" fill="rgba(255,255,255,0.8)" />
-            <circle cx="25" cy="12" r="10" fill="rgba(255,255,255,0.8)" />
-            <circle cx="35" cy="15" r="8" fill="rgba(255,255,255,0.8)" />
-          </svg>
-        </div>
-
-        <div className="absolute top-8 right-24 animate-cloud-2">
-          <svg className="w-10 h-5" viewBox="0 0 50 25">
-            <circle cx="12" cy="12" r="6" fill="rgba(255,255,255,0.6)" />
-            <circle cx="20" cy="10" r="8" fill="rgba(255,255,255,0.6)" />
-            <circle cx="28" cy="12" r="6" fill="rgba(255,255,255,0.6)" />
-          </svg>
-        </div>
-
-        {/* Hero Text Overlay */}
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="text-center text-white">
-            <h1 className="text-3xl md:text-4xl font-bold mb-2 drop-shadow-lg">
-              India's No.1 online
-            </h1>
-            <h2 className="text-2xl md:text-3xl font-bold drop-shadow-lg">
-              bus ticket booking site
-            </h2>
-          </div>
         </div>
       </div>
-
-      <style jsx>{`
-        @keyframes busMove {
-          0% {
-            transform: translateX(-120px);
-          }
-          100% {
-            transform: translateX(calc(100vw + 120px));
-          }
-        }
-
-        @keyframes cloud1 {
-          0% {
-            transform: translateX(-60px);
-          }
-          100% {
-            transform: translateX(calc(100vw + 60px));
-          }
-        }
-
-        @keyframes cloud2 {
-          0% {
-            transform: translateX(-50px);
-          }
-          100% {
-            transform: translateX(calc(100vw + 50px));
-          }
-        }
-
-        @keyframes sway1 {
-          0%,
-          100% {
-            transform: rotate(-2deg);
-          }
-          50% {
-            transform: rotate(2deg);
-          }
-        }
-
-        @keyframes sway2 {
-          0%,
-          100% {
-            transform: rotate(1deg);
-          }
-          50% {
-            transform: rotate(-1deg);
-          }
-        }
-
-        @keyframes sway3 {
-          0%,
-          100% {
-            transform: rotate(-1deg);
-          }
-          50% {
-            transform: rotate(1deg);
-          }
-        }
-
-        @keyframes dash {
-          0% {
-            background-position: 0% 0%;
-          }
-          100% {
-            background-position: 100% 0%;
-          }
-        }
-
-        .animate-bus-move {
-          animation: busMove 12s linear infinite;
-        }
-
-        .animate-cloud-1 {
-          animation: cloud1 25s linear infinite;
-        }
-
-        .animate-cloud-2 {
-          animation: cloud2 30s linear infinite 5s;
-        }
-
-        .animate-sway-1 {
-          animation: sway1 3s ease-in-out infinite;
-        }
-
-        .animate-sway-2 {
-          animation: sway2 4s ease-in-out infinite 1s;
-        }
-
-        .animate-sway-3 {
-          animation: sway3 3.5s ease-in-out infinite 2s;
-        }
-
-        .animate-dash {
-          background-image: repeating-linear-gradient(
-            90deg,
-            transparent,
-            transparent 10px,
-            #fde047 10px,
-            #fde047 20px
-          );
-          animation: dash 2s linear infinite;
-        }
-      `}</style>
-
       {/* Main Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Hero Section */}
