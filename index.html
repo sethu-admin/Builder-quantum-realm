@@ -4,40 +4,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>QuickBus - Book Bus Tickets</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>QuickBus</h1>
+  <header class="main-header">
+    <div class="logo">QuickBus</div>
     <nav>
       <a href="#">Home</a>
-      <a href="#">My Bookings</a>
+      <a href="#">Offers</a>
+      <a href="#">Contact</a>
     </nav>
   </header>
 
-  <section class="search-box">
-    <h2>Search Buses</h2>
-    <form id="searchForm">
-      <div>
-        <label for="from">From</label>
-        <input type="text" id="from" required placeholder="Origin city" />
-      </div>
-      <div>
-        <label for="to">To</label>
-        <input type="text" id="to" required placeholder="Destination city" />
-      </div>
-      <div>
-        <label for="date">Date of journey</label>
-        <input type="date" id="date" required />
-      </div>
+  <section class="hero">
+    <h1>Find and Book <span>Bus Tickets</span> Easily</h1>
+    <form id="searchForm" class="search-form">
+      <input type="text" id="from" placeholder="Leaving from" required>
+      <input type="text" id="to" placeholder="Going to" required>
+      <input type="date" id="date" required>
       <button type="submit">Search</button>
     </form>
   </section>
 
-  <section id="results" class="hidden">
+  <section id="results" class="results hidden">
     <h2>Available Buses</h2>
     <ul id="busList"></ul>
   </section>
+
+  <footer>
+    <p>&copy; 2025 QuickBus</p>
+  </footer>
 
   <script src="app.js"></script>
 </body>
