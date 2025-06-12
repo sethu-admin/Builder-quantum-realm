@@ -1,14 +1,44 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello world project</title>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuickBus - Book Bus Tickets</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>QuickBus</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">My Bookings</a>
+    </nav>
+  </header>
 
-  <body>
-    <div id="root"></div>
+  <section class="search-box">
+    <h2>Search Buses</h2>
+    <form id="searchForm">
+      <div>
+        <label for="from">From</label>
+        <input type="text" id="from" required placeholder="Origin city" />
+      </div>
+      <div>
+        <label for="to">To</label>
+        <input type="text" id="to" required placeholder="Destination city" />
+      </div>
+      <div>
+        <label for="date">Date of journey</label>
+        <input type="date" id="date" required />
+      </div>
+      <button type="submit">Search</button>
+    </form>
+  </section>
 
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+  <section id="results" class="hidden">
+    <h2>Available Buses</h2>
+    <ul id="busList"></ul>
+  </section>
+
+  <script src="app.js"></script>
+</body>
 </html>
