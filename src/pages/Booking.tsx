@@ -184,6 +184,14 @@ const Booking = () => {
             </Card>
           ))}
         </div>
+        <div className="text-center mt-8">
+          <Button
+            className="px-8 py-4 text-lg rounded-xl"
+            onClick={() => navigate("/seat")}
+          >
+            Book Seat
+          </Button>
+        </div>
       </div>
     </div>
   );

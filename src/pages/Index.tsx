@@ -32,6 +32,12 @@ const Index = () => {
   const [toCity, setToCity] = useState("");
   const [selectedDate, setSelectedDate] = useState("");
   const [freeCancellation, setFreeCancellation] = useState(true);
+  const [speedUp, setSpeedUp] = useState(false);
+
+  const handleStart = () => {
+    setSpeedUp(true);
+    setTimeout(() => navigate("/booking"), 700);
+  };
 
   const swapCities = () => {
     const temp = fromCity;
@@ -57,6 +63,14 @@ const Index = () => {
   };
 
   const today = new Date().toISOString().split("T")[0];
+
+  const balls = [
+    { top: "10%", left: "20%", size: 80, duration: 12, delay: 0 },
+    { top: "40%", left: "70%", size: 60, duration: 14, delay: 1 },
+    { top: "70%", left: "30%", size: 100, duration: 10, delay: 2 },
+    { top: "20%", left: "80%", size: 50, duration: 16, delay: 0 },
+    { top: "60%", left: "10%", size: 70, duration: 18, delay: 1 },
+  ];
 
   const featureCards = [
     {
@@ -123,6 +137,24 @@ const Index = () => {
 
       {/* Professional Hero Section */}
       <div className="relative bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900 overflow-hidden">
+        {/* Floating Balls Background */}
+        <div className="absolute inset-0 pointer-events-none">
+          {balls.map((b, i) => (
+            <div
+              key={i}
+              className="rounded-full bg-white/20 blur-2xl opacity-70"
+              style={{
+                width: b.size,
+                height: b.size,
+                top: b.top,
+                left: b.left,
+                position: "absolute",
+                animation: `float ${speedUp ? 0.7 : b.duration}s ease-in-out ${b.delay}s infinite`,
+              }}
+            />
+          ))}
+        </div>
+
         {/* Geometric Background Pattern */}
         <div className="absolute inset-0">
           <div className="absolute top-0 left-0 w-96 h-96 bg-gradient-to-br from-blue-400/10 to-transparent rounded-full -translate-x-48 -translate-y-48 animate-float"></div>
@@ -200,7 +232,7 @@ const Index = () => {
               <div className="max-w-2xl mx-auto">
                 <div className="bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 p-1 rounded-full shadow-2xl">
                   <Button
-                    onClick={() => navigate("/booking")}
+                    onClick={handleStart}
                     className="w-full bg-white/10 backdrop-blur-sm rounded-full px-12 py-6 border border-white/20 hover:bg-white/20 transition-all duration-300 h-auto"
                   >
                     <div className="flex items-center justify-center space-x-4">
