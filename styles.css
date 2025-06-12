@@ -1,0 +1,109 @@
+body {
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f5f7fa;
+  color: #333;
+}
+
+.main-header {
+  background: linear-gradient(90deg, #e23744 0%, #f45d67 100%);
+  color: #fff;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.main-header nav a {
+  color: #fff;
+  margin-left: 16px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: url('https://picsum.photos/seed/bus/1200/400') center/cover no-repeat;
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+.hero span {
+  color: #ffe27a;
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.search-form input {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  flex: 1 1 140px;
+}
+
+.search-form button {
+  background: #ff812d;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.results {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.bus-card {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.bus-card:last-child {
+  border-bottom: none;
+}
+
+.bus-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.bus-price {
+  font-weight: bold;
+  color: #e23744;
+}
+
+.hidden {
+  display: none;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #f0f0f0;
+  margin-top: 60px;
+}
